@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+         <!-- google fonts -->
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap"
+         rel="stylesheet">
+         <!-- fontAwesome -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+         <!-- bootstrap link -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+          
+</head>
+<body>
+    <Section class="container-fluid">
+        <span style="color:blueviolet"></span>
+        
+        <h1 class="d-flex justify-content-center"><span style="color:blueviolet">N</span><span style="color:rgb(102, 7, 190)">Gen-</span><span style="color:rgb(183, 1, 177)">IT</span></h1>
+        <table class="table table-striped">
+            <thead>
+              <tr class="bg-dark text-white">
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Date</th>
+                <th scope="col" class="text-end">Page link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Web Design - Admin Dashboard</td>
+                <td>(1, 6 - GR) 4, 5, 7</td>
+                <td class="text-end"><a href="#" class="btn btn-danger">Error</a></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Web Design - Single Product View Page</td>
+                <td>09-08-2022</td>
+                <td class="text-end"><a href="ngenit/single_product.html" class="btn btn-info">View</a></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Web Design - Single Solution View Page</td>
+                <td>09-11-2022</td>
+                <td class="text-end"><a href="ngenit/client_stories_blog_insert.html" class="btn btn-info">View</a></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Web Design - All Client Stories Page</td>
+                <td>09-12-2022</td>
+                <td class="text-end"><a href="ngenit/all_client_stories.html" class="btn btn-info">View</a></td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Github Clone & Laravel View Page Setup</td>
+                <td>09-13-2022</td>
+                <td class="text-end"><a href="#" class="btn btn-danger">Error</a></td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Web Design - Client Stories Insert Page</td>
+                <td>09-14-2022</td>
+                <td class="text-end"><a href="ngenit/client_stories_blog_insert.html" class="btn btn-info">View </a></td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Web Design - Product Filter Page</td>
+                <td>09-17-2022 (15, 17)</td>
+                <td class="text-end"><a href="ngenit/product_filters.html" class="btn btn-info">View </a></td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Web Design - Common Product Page</td>
+                <td>09-19-2022 (18, 19)</td>
+                <td class="text-end"><a href="ngenit/common_product.html" class="btn btn-info">View </a></td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>Web Design - Client Dashboard Page </td>
+                <td>09-21-2022 (20, 21)</td>
+                <td class="text-end"><a href="ngenit/client_dashboard.html" class="btn btn-info">View </a></td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>Web Design - Client Dashboard Order Tracking Page</td>
+                <td>09-22-2022</td>
+                <td class="text-end"><a href="ngenit/track_order.html" class="btn btn-info">View </a></td>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>Web Design - Client Dashboard Content-Resources</td>
+                <td>09-25-2022</td>
+                <td class="text-end"><a href="ngenit/content_resources.html" class="btn btn-info">View </a></td>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td>Web Design - Personal Product List (Font-End)</td>
+                <td>09-26-2022</td>
+                <td class="text-end"><a href="ngenit/personal_product_list.html" class="btn btn-info">View </a></td>
+              </tr>
+            </tbody>
+          </table>
+    </Section>
+
+   <!------------------------------------------->
+   <!------------------------------------------
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+   
+   <style type="text/css">
+    button {
+        background: none !important;
+        border: none;
+        padding: 10px !important;
+    }
+    </style>
+
+  <section>
+    <button id="btnMoreLess" type="button" style="font-size: 24px; color: #61C8E0" onclick="ReadMoreLess()">
+        <i id="iMoreLess" class="fa fa-chevron-circle-right"></i>
+        &nbsp;&nbsp;<span id="lblText">See all open positions</span>
+    </button>
+    <p style="padding: 10px !important;">This is simple.<span id="dots">...</span></p>
+    <p id="more" style="padding: 10px !important; display: none;"><span>This is more Text.</span></p>
+  </section>
+   
+    <script type="text/javascript">
+        function ReadMoreLess() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var iMoreLess = document.getElementById("iMoreLess");
+            var lblText = document.getElementById("lblText");
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                iMoreLess.className = "fa fa-chevron-circle-right";
+                lblText.innerHTML = "See all open positions";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                iMoreLess.className = "fa fa-chevron-circle-down";
+                lblText.innerHTML = "Hide all open positions";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+   ----------------------------------------->
+   <!------------------------------------------->
+
+    <!-- bootstrap jsBundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+</body>
+</html>

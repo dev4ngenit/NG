@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Accordion with Plus Minus Icon</title>
+
+    <link rel="icon" type="image/x-icon" href="images/fav-icon.png">
+    
+    <!--Cdn link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+    <!--CSS File-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--==========================-->
+    <section class="container">
+        <h2>What can JavaScript Do?</h2>
+        <p id="demo">JavaScript can change HTML content.</p>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML='Hello JavaScript' ">Click Me!</button>
+    </section><hr>
+    <!--==========================-->
+    <section class="container">
+        <h2>JavaScript Can Change HTML Attribute Values</h2>
+
+        <button type="button" onclick="document.getElementById('imgbtn').src='images/pic_bulboff.gif'">Turn off the light</button>
+
+        <img id="imgbtn" src="images/pic_bulboff.gif" alt="">
+
+        <button onclick="document.getElementById('imgbtn').src='images/pic_bulbon.gif' ">Turn on the light</button>
+    </section><hr>
+    <!--==========================-->
+    <section>
+        
+    </section>
+
+
+
+
+
+   
+    <!--=============Script=============-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Js File-->
+    <script src="js/scripts.min.js"></script>
+</body>
+</html>

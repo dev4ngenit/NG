@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter</title>
+
+
+    <!-------cdn link------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!--cdn alert--> 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-------CSS File------->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--========Header Title==========-->
+    <section class="header_title_product_filter">
+        <h1>Desktop</h1>
+    </section>
+    <!----------Header Title End--------->
+    <br><br>
+    <!--============Content & Filter=============-->
+    <section class="container">
+        <!----------Filter Top-nav Bar --------->
+        <div class="clinet_stories_filter_top_bar">
+            <label>Results per page </label>
+            <span class="client_story_filter_page">
+                <select>
+                    <option value="#" selected>10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                </select>
+            </span>
+
+            <label class="ml-4">Sort By: </label>
+            <span class="client_story_filter_all_year">
+                <select>
+                    <option value="#" selected>Best Match</option>
+                    <option value="#">Best Match</option>
+                    <option value="#">Best Sellers</option>
+                    <option value="#">price low to high</option>
+                    <option value="#">price high to low</option>
+                    <option value="#">Manufacturer</option>
+                    <option value="#">Product name</option>
+                </select>
+            </span>
+            <span class="product_go_to_next_pge"><a href="#" class="float-right">Go to next page...<i
+                        class="fa-solid fa-chevron-right"></i></a></span>
+        </div>
+        <hr>
+        <div class="row">
+            <!----------Sidebar client stories --------->
+            <div class="col-lg-3 col-sm-12">
+                <div class="sidebar_client_stories">
+                    <label><b>2</b> results matched your search</label>
+                    <hr>
+                    <!--------Your search--------->
+                    <div class="client_stories_your_search">
+                        <h6 class="mb-4">Your search</h6>
+                        <div class="alert alert-secondary alert-dismissible">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>Education (higher)
+                        </div>
+                        <div class="alert alert-secondary alert-dismissible">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>Application (low)
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-------Content Results---------->
+                    <div class="client_stories_narrow_content">
+                        <h6 class="mb-4">Narrow results</h6>
+                        <input type="text" placeholder="BY KEYWORD...">
+                    </div>
+                    <hr>
+
+                    <!-------Apply Filters Button---------->
+                    <div id="sticker">
+                        <div class="product_apply_filter_btn d-flex">
+                        <a href="#">Apply Filters</a>
+                    </div>
+                    </div>
+                    
+                    <hr>
+
+                    <!-------List Price---------->
+                    <div class="product_list_price">
+                        <h6 class="mb-4">List Price</h6>
+                        <form action="#">
+                            <input type="number" id="quantity" name="quantity" style="width: 80px;">
+                            <label for="#">to</label>
+                            <input type="number" id="quantity" name="quantity" style="width: 80px;">
+                        </form>
+                    </div>
+                    <hr>
+
+                    <!-------Stock Status---------->
+                    <div class="product_stock_status">
+                        <h6 class="mb-4">Stock Status</h6>
+                        <div class="form-check">
+                            <input class="form-check-input custom" type="checkbox" id="flexCheckDefault">
+                            <span class="ml-2">Show only in-stock items</span>
+                        </div>
+
+                    </div>
+                    <hr>
+                    
+                    <!--------Manufacturers--------->
+                    <div class="client_stories_filter_category">
+                        <h6 onclick="myFunction()" class="mb-4"><i class="fa-solid fa-caret-down"></i> Manufacturers
+                        </h6>
+
+                        <div id="filter_category">
+                            <div class="form-check">
+                                <input class="form-check-input custom" type="checkbox" id="flexCheckDefault">
+                                <span class="ml-2"> LENOVO</span>
+                                <span class="float-right">2,678</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input custom" type="checkbox" id="flexCheckDefault">
+                                <span class="ml-2">HP INC</span>
+                                <span class="float-right">678</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input custom" type="checkbox" id="flexCheckDefault">
+                                <span class="ml-2"> HEWLETT PACKARD</span>
+                                <span class="float-right">78</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input custom" type="checkbox" id="flexCheckDefault">
+                                <span class="ml-2"> APPLE</span>
+                                <span class="float-right">1,578</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input custom" type="checkbox" id="flexCheckDefault">
+                                <span class="ml-2">Joy Systems - Dell Refurbs</span>
+                                <span class="float-right">1,578</span>
+                            </div>
+                            
+                        </div>
+
+
+                    </div>
+                    <hr>
+
+                    <!--------System / Type--------->
+                    <div class="client_stories_filter_category">
+                        <h6 onclick="showhide()" class="mb-4"><i class="fa-solid fa-caret-down"></i>System / Type</h6>
+
+                        <div id="newpost">
+                            <div class="form-check">
+                                <input class="form-check-input custom" type="checkbox" id="flexCheckDefault">
+                                <span class="ml-2">Agile</span>
+                                <span class="float-right">2,678</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input custom" type="checkbox" id="flexCheckDefault">
+                                <span class="ml-2">Application Development</span>
+                                <span class="float-right">678</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input custom" type="checkbox" id="flexCheckDefault">
+                                <span class="ml-2">Artificial Intelligence</span>
+                                <span class="float-right">78</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input custom" type="checkbox" id="flexCheckDefault">
+                                <span class="ml-2">As a service</span>
+                                <span class="float-right">1,578</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!--------End--------->
+
+                </div>
+            </div>
+            <!----------conternt client stories --------->
+            <div class="col-lg-9 col-sm-12">
+                
+                <!--------item------->
+                <div class="product_content_item row">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <img class="img-fluid" src="images/product/product (2).jpg" alt="">
+                    </div>
+                    
+                    <div class="col-lg-9 col-md-8 col-sm-12 product_content_item">
+                        <a href="#">
+                            <h3>Lenovo ThinkCentre M70q Gen 2 - tiny - Core i5 11400T 1.3 GHz - 8 GB - SSD 256 GB - US
+                            </h3>
+                        </a>
+                        <!--Add To Basket-->
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-12">
+                                <p>Insight Part #: 11MY001SUS</p>
+                                <p>Mfr Part #: 11MY001SUS</p>
+                                <ul class="mt-2">
+                                    <li>Intel Core i5 1.3 GHz processor (Qty 1) DDR4 SDRAM</li>
+                                    <li>256 GB hard drive;None;Ethernet,Fast Ethernet,Gigabit Ethernet,IEEE 802.11n,IEEE
+                                        802.11ac,IEEE 802.11b,IEEE 802.11a,IEEE 802.11g,Bluetooth 5.0,IEEE 802.11ax
+                                        (Wi-Fi 6)</li>
+                                    <li>3-year warranty</li>
+                                </ul>
+                                <div class="row"> 
+                                    <div class="col-lg-7 col-md-12">
+                                        <a href="#" class="">Add to My Compare List</a>
+                                    </div>
+                                    <div class="col-lg-5 col-md-12">
+                                        <a href="#" class="">Compare Similar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-12">
+                                <h4>List Price</h4>
+                                <h3>USD $682.99</h3>
+                                <h6>1,380 in stock</h6>
+                                <!------------>
+                                <div class="row mt-4">
+                                    <div class="quantity d-flex justify-content-start mr-2">
+                                        <input type="number" min="1" max="9" step="1" value="1">
+                                    </div>
+                                    <div class="product_add_bascket_btn d-flex justify-content-end">
+                                        <a href="#">Add To Basket</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><hr><br><br>
+                
+                <!--------item------->
+                <div class="product_content_item row">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <img class="img-fluid" src="images/product/product (4).jpg" alt="">
+                    </div>
+                    
+                    <div class="col-lg-9 col-md-8 col-sm-12 product_content_item">
+                        <a href="#">
+                            <h3>Lenovo ThinkCentre M70q Gen 2 - tiny - Core i5 11400T 1.3 GHz - 8 GB - SSD 256 GB - US
+                            </h3>
+                        </a>
+                        <!--Add To Basket-->
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-12">
+                                <p>Insight Part #: 11MY001SUS</p>
+                                <p>Mfr Part #: 11MY001SUS</p>
+                                <ul class="mt-2">
+                                    <li>Intel Core i5 1.3 GHz processor (Qty 1) DDR4 SDRAM</li>
+                                    <li>256 GB hard drive;None;Ethernet,Fast Ethernet,Gigabit Ethernet,IEEE 802.11n,IEEE
+                                        802.11ac,IEEE 802.11b,IEEE 802.11a,IEEE 802.11g,Bluetooth 5.0,IEEE 802.11ax
+                                        (Wi-Fi 6)</li>
+                                    <li>3-year warranty</li>
+                                </ul>
+                                <div class="row"> 
+                                    <div class="col-lg-7 col-md-12">
+                                        <a href="#" class="">Add to My Compare List</a>
+                                    </div>
+                                    <div class="col-lg-5 col-md-12">
+                                        <a href="#" class="">Compare Similar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-12">
+                                <h4>List Price</h4>
+                                <h3>USD $682.99</h3>
+                                <h6>1,380 in stock</h6>
+                                <!------------>
+                                <div class="row mt-4">
+                                    <div class="quantity d-flex justify-content-start mr-2">
+                                        <input type="number" min="1" max="9" step="1" value="1">
+                                    </div>
+                                    <div class="product_add_bascket_btn d-flex justify-content-end">
+                                        <a href="#">Add To Basket</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><hr><br><br>
+                
+                <!--------item------->
+                <div class="product_content_item row">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <img class="img-fluid" src="images/product/product (5).jpg" alt="">
+                    </div>
+                    
+                    <div class="col-lg-9 col-md-8 col-sm-12 product_content_item">
+                        <a href="#">
+                            <h3>Lenovo ThinkCentre M70q Gen 2 - tiny - Core i5 11400T 1.3 GHz - 8 GB - SSD 256 GB - US
+                            </h3>
+                        </a>
+                        <!--Add To Basket-->
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-12">
+                                <p>Insight Part #: 11MY001SUS</p>
+                                <p>Mfr Part #: 11MY001SUS</p>
+                                <ul class="mt-2">
+                                    <li>Intel Core i5 1.3 GHz processor (Qty 1) DDR4 SDRAM</li>
+                                    <li>256 GB hard drive;None;Ethernet,Fast Ethernet,Gigabit Ethernet,IEEE 802.11n,IEEE
+                                        802.11ac,IEEE 802.11b,IEEE 802.11a,IEEE 802.11g,Bluetooth 5.0,IEEE 802.11ax
+                                        (Wi-Fi 6)</li>
+                                    <li>3-year warranty</li>
+                                </ul>
+                                <div class="row"> 
+                                    <div class="col-lg-7 col-md-12">
+                                        <a href="#" class="">Add to My Compare List</a>
+                                    </div>
+                                    <div class="col-lg-5 col-md-12">
+                                        <a href="#" class="">Compare Similar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-12">
+                                <h4>List Price</h4>
+                                <h3>USD $682.99</h3>
+                                <h6>1,380 in stock</h6>
+                                <!------------>
+                                <div class="row mt-4">
+                                    <div class="quantity d-flex justify-content-start mr-2">
+                                        <input type="number" min="1" max="9" step="1" value="1">
+                                    </div>
+                                    <div class="product_add_bascket_btn d-flex justify-content-end">
+                                        <a href="#">Add To Basket</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><hr><br><br>
+                
+                <!--------item------->
+                <div class="product_content_item row">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <img class="img-fluid" src="images/product/product (6).jpg" alt="">
+                    </div>
+                    
+                    <div class="col-lg-9 col-md-8 col-sm-12 product_content_item">
+                        <a href="#">
+                            <h3>Lenovo ThinkCentre M70q Gen 2 - tiny - Core i5 11400T 1.3 GHz - 8 GB - SSD 256 GB - US
+                            </h3>
+                        </a>
+                        <!--Add To Basket-->
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-12">
+                                <p>Insight Part #: 11MY001SUS</p>
+                                <p>Mfr Part #: 11MY001SUS</p>
+                                <ul class="mt-2">
+                                    <li>Intel Core i5 1.3 GHz processor (Qty 1) DDR4 SDRAM</li>
+                                    <li>256 GB hard drive;None;Ethernet,Fast Ethernet,Gigabit Ethernet,IEEE 802.11n,IEEE
+                                        802.11ac,IEEE 802.11b,IEEE 802.11a,IEEE 802.11g,Bluetooth 5.0,IEEE 802.11ax
+                                        (Wi-Fi 6)</li>
+                                    <li>3-year warranty</li>
+                                </ul>
+                                <div class="row"> 
+                                    <div class="col-lg-7 col-md-12">
+                                        <a href="#" class="">Add to My Compare List</a>
+                                    </div>
+                                    <div class="col-lg-5 col-md-12">
+                                        <a href="#" class="">Compare Similar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-12">
+                                <h4>List Price</h4>
+                                <h3>USD $682.99</h3>
+                                <h6>1,380 in stock</h6>
+                                <!------------>
+                                <div class="row mt-4">
+                                    <div class="quantity d-flex justify-content-start mr-2">
+                                        <input type="number" min="1" max="9" step="1" value="1">
+                                    </div>
+                                    <div class="product_add_bascket_btn d-flex justify-content-end">
+                                        <a href="#">Add To Basket</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><hr><br><br>
+                
+                <!--------item------->
+                <div class="product_content_item row">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <img class="img-fluid" src="images/product/product (7).jpg" alt="">
+                    </div>
+                    
+                    <div class="col-lg-9 col-md-8 col-sm-12 product_content_item">
+                        <a href="#">
+                            <h3>Lenovo ThinkCentre M70q Gen 2 - tiny - Core i5 11400T 1.3 GHz - 8 GB - SSD 256 GB - US
+                            </h3>
+                        </a>
+                        <!--Add To Basket-->
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-12">
+                                <p>Insight Part #: 11MY001SUS</p>
+                                <p>Mfr Part #: 11MY001SUS</p>
+                                <ul class="mt-2">
+                                    <li>Intel Core i5 1.3 GHz processor (Qty 1) DDR4 SDRAM</li>
+                                    <li>256 GB hard drive;None;Ethernet,Fast Ethernet,Gigabit Ethernet,IEEE 802.11n,IEEE
+                                        802.11ac,IEEE 802.11b,IEEE 802.11a,IEEE 802.11g,Bluetooth 5.0,IEEE 802.11ax
+                                        (Wi-Fi 6)</li>
+                                    <li>3-year warranty</li>
+                                </ul>
+                                <div class="row"> 
+                                    <div class="col-lg-7 col-md-12">
+                                        <a href="#" class="">Add to My Compare List</a>
+                                    </div>
+                                    <div class="col-lg-5 col-md-12">
+                                        <a href="#" class="">Compare Similar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-12">
+                                <h4>List Price</h4>
+                                <h3>USD $682.99</h3>
+                                <h6>1,380 in stock</h6>
+                                <!------------>
+                                <div class="row mt-4">
+                                    <div class="quantity d-flex justify-content-start mr-2">
+                                        <input type="number" min="1" max="9" step="1" value="1">
+                                    </div>
+                                    <div class="product_add_bascket_btn d-flex justify-content-end">
+                                        <a href="#">Add To Basket</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><hr><br><br>
+                
+                <!--------item------->
+                <div class="product_content_item row">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <img class="img-fluid" src="images/product/product (8).jpg" alt="">
+                    </div>
+                    
+                    <div class="col-lg-9 col-md-8 col-sm-12 product_content_item">
+                        <a href="#">
+                            <h3>Lenovo ThinkCentre M70q Gen 2 - tiny - Core i5 11400T 1.3 GHz - 8 GB - SSD 256 GB - US
+                            </h3>
+                        </a>
+                        <!--Add To Basket-->
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-12">
+                                <p>Insight Part #: 11MY001SUS</p>
+                                <p>Mfr Part #: 11MY001SUS</p>
+                                <ul class="mt-2">
+                                    <li>Intel Core i5 1.3 GHz processor (Qty 1) DDR4 SDRAM</li>
+                                    <li>256 GB hard drive;None;Ethernet,Fast Ethernet,Gigabit Ethernet,IEEE 802.11n,IEEE
+                                        802.11ac,IEEE 802.11b,IEEE 802.11a,IEEE 802.11g,Bluetooth 5.0,IEEE 802.11ax
+                                        (Wi-Fi 6)</li>
+                                    <li>3-year warranty</li>
+                                </ul>
+                                <div class="row"> 
+                                    <div class="col-lg-7 col-md-12">
+                                        <a href="#" class="">Add to My Compare List</a>
+                                    </div>
+                                    <div class="col-lg-5 col-md-12">
+                                        <a href="#" class="">Compare Similar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-12">
+                                <h4>List Price</h4>
+                                <h3>USD $682.99</h3>
+                                <h6>1,380 in stock</h6>
+                                <!------------>
+                                <div class="row mt-4">
+                                    <div class="quantity d-flex justify-content-start mr-2">
+                                        <input type="number" min="1" max="9" step="1" value="1">
+                                    </div>
+                                    <div class="product_add_bascket_btn d-flex justify-content-end">
+                                        <a href="#">Add To Basket</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><hr><br><br>
+                
+                <!--------item------->
+                <div class="product_content_item row">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <img class="img-fluid" src="images/product/product (10).jpg" alt="">
+                    </div>
+                    
+                    <div class="col-lg-9 col-md-8 col-sm-12 product_content_item">
+                        <a href="#">
+                            <h3>Lenovo ThinkCentre M70q Gen 2 - tiny - Core i5 11400T 1.3 GHz - 8 GB - SSD 256 GB - US
+                            </h3>
+                        </a>
+                        <!--Add To Basket-->
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-12">
+                                <p>Insight Part #: 11MY001SUS</p>
+                                <p>Mfr Part #: 11MY001SUS</p>
+                                <ul class="mt-2">
+                                    <li>Intel Core i5 1.3 GHz processor (Qty 1) DDR4 SDRAM</li>
+                                    <li>256 GB hard drive;None;Ethernet,Fast Ethernet,Gigabit Ethernet,IEEE 802.11n,IEEE
+                                        802.11ac,IEEE 802.11b,IEEE 802.11a,IEEE 802.11g,Bluetooth 5.0,IEEE 802.11ax
+                                        (Wi-Fi 6)</li>
+                                    <li>3-year warranty</li>
+                                </ul>
+                                <div class="row"> 
+                                    <div class="col-lg-7 col-md-12">
+                                        <a href="#" class="">Add to My Compare List</a>
+                                    </div>
+                                    <div class="col-lg-5 col-md-12">
+                                        <a href="#" class="">Compare Similar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-12">
+                                <h4>List Price</h4>
+                                <h3>USD $682.99</h3>
+                                <h6>1,380 in stock</h6>
+                                <!------------>
+                                <div class="row mt-4">
+                                    <div class="quantity d-flex justify-content-start mr-2">
+                                        <input type="number" min="1" max="9" step="1" value="1">
+                                    </div>
+                                    <div class="product_add_bascket_btn d-flex justify-content-end">
+                                        <a href="#">Add To Basket</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><hr><br><br>
+                
+                <!--------item------->
+                <div class="product_content_item row">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <img class="img-fluid" src="images/product/product (1).jpg" alt="">
+                    </div>
+                    
+                    <div class="col-lg-9 col-md-8 col-sm-12 product_content_item">
+                        <a href="#">
+                            <h3>Lenovo ThinkCentre M70q Gen 2 - tiny - Core i5 11400T 1.3 GHz - 8 GB - SSD 256 GB - US
+                            </h3>
+                        </a>
+                        <!--Add To Basket-->
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-12">
+                                <p>Insight Part #: 11MY001SUS</p>
+                                <p>Mfr Part #: 11MY001SUS</p>
+                                <ul class="mt-2">
+                                    <li>Intel Core i5 1.3 GHz processor (Qty 1) DDR4 SDRAM</li>
+                                    <li>256 GB hard drive;None;Ethernet,Fast Ethernet,Gigabit Ethernet,IEEE 802.11n,IEEE
+                                        802.11ac,IEEE 802.11b,IEEE 802.11a,IEEE 802.11g,Bluetooth 5.0,IEEE 802.11ax
+                                        (Wi-Fi 6)</li>
+                                    <li>3-year warranty</li>
+                                </ul>
+                                <div class="row"> 
+                                    <div class="col-lg-7 col-md-12">
+                                        <a href="#" class="">Add to My Compare List</a>
+                                    </div>
+                                    <div class="col-lg-5 col-md-12">
+                                        <a href="#" class="">Compare Similar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-12">
+                                <h4>List Price</h4>
+                                <h3>USD $682.99</h3>
+                                <h6>1,380 in stock</h6>
+                                <!------------>
+                                <div class="row mt-4">
+                                    <div class="quantity d-flex justify-content-start mr-2">
+                                        <input type="number" min="1" max="9" step="1" value="1">
+                                    </div>
+                                    <div class="product_add_bascket_btn d-flex justify-content-end">
+                                        <a href="#">Add To Basket</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><hr><br><br>
+                
+                <!--------item------->
+                <div class="product_content_item row">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <img class="img-fluid" src="images/product/product (2).jpg" alt="">
+                    </div>
+                    
+                    <div class="col-lg-9 col-md-8 col-sm-12 product_content_item">
+                        <a href="#">
+                            <h3>Lenovo ThinkCentre M70q Gen 2 - tiny - Core i5 11400T 1.3 GHz - 8 GB - SSD 256 GB - US
+                            </h3>
+                        </a>
+                        <!--Add To Basket-->
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-12">
+                                <p>Insight Part #: 11MY001SUS</p>
+                                <p>Mfr Part #: 11MY001SUS</p>
+                                <ul class="mt-2">
+                                    <li>Intel Core i5 1.3 GHz processor (Qty 1) DDR4 SDRAM</li>
+                                    <li>256 GB hard drive;None;Ethernet,Fast Ethernet,Gigabit Ethernet,IEEE 802.11n,IEEE
+                                        802.11ac,IEEE 802.11b,IEEE 802.11a,IEEE 802.11g,Bluetooth 5.0,IEEE 802.11ax
+                                        (Wi-Fi 6)</li>
+                                    <li>3-year warranty</li>
+                                </ul>
+                                <div class="row"> 
+                                    <div class="col-lg-7 col-md-12">
+                                        <a href="#" class="">Add to My Compare List</a>
+                                    </div>
+                                    <div class="col-lg-5 col-md-12">
+                                        <a href="#" class="">Compare Similar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-12">
+                                <h4>List Price</h4>
+                                <h3>USD $682.99</h3>
+                                <h6>1,380 in stock</h6>
+                                <!------------>
+                                <div class="row mt-4">
+                                    <div class="quantity d-flex justify-content-start mr-2">
+                                        <input type="number" min="1" max="9" step="1" value="1">
+                                    </div>
+                                    <div class="product_add_bascket_btn d-flex justify-content-end">
+                                        <a href="#">Add To Basket</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><hr><br>
+                
+            </div>
+        </div>
+        </div>
+
+
+        <!------------------Pagination------------------->
+        <div class="d-flex justify-content-center">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item mr-4">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item ml-4">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <br>
+
+
+
+
+
+
+    <!---================================================================--->
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("filter_category");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }  
+        function showhide()
+        {  
+             var div = document.getElementById("newpost");  
+             if (div.style.display !== "none") 
+             {  
+                 div.style.display = "none";  
+             }  
+             else
+             {  
+                 div.style.display = "block";  
+             }  
+        } 
+        //-----------------
+        $(document).ready(function() {
+			var s = $("#sticker");
+			var pos = s.position();					   
+			$(window).scroll(function() {
+				var windowpos = $(window).scrollTop();
+				if (windowpos >= pos.top) {
+					s.addClass("stick");
+				} else {
+					s.removeClass("stick");	
+				}
+			});
+		});
+        //-----------------
+        function ReadMoreLess() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var iMoreLess = document.getElementById("iMoreLess");
+            var lblText = document.getElementById("lblText");
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                iMoreLess.className = "fa fa-chevron-circle-right";
+                lblText.innerHTML = "See all open positions";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                iMoreLess.className = "fa fa-chevron-circle-down";
+                lblText.innerHTML = "Hide all open positions";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>  
+
+
+    <script src="libs/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
