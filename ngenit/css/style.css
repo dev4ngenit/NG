@@ -1259,6 +1259,63 @@ body {font-family: "Lato", sans-serif;}
 /*-----End-----*/
 
 /*=====================================
+    Client Dahboard -- Profile
+======================================*/
+.client_db_profile_header{
+    margin: 0px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ae0a46;
+}
+.client_db_profile_header img{
+    clip-path: circle();
+    width: 250px;
+    display: inline;
+}
+.client_db_profile_title h3{
+    margin-top: 20px;
+    color: #222;
+    font-family: arial;
+    font-style: normal;
+}
+.client_db_profile_title p{
+}
+.client_db_details h3{
+    color: #222;
+    font-family: lato;
+    font-style: normal;
+}
+.client_db_about h3{
+    color: #222;
+    font-family: lato;
+    font-style: normal;
+}
+.client_db_about p{
+    font-size: 16px;
+    color: #222;
+    font-family: arial;
+    font-style: normal;
+}
+.client_db_about ul{
+    margin: 0px;
+    padding: 0px;
+}
+.client_db_about ul li{
+    list-style-type: none;
+    float: left;
+    margin-right: 10px;
+    color: white;
+}
+.client_db_about ul li a{
+    color: white;
+    background-color: #ae0a46;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+.client_db_about ul li a:hover{
+    background-color: #510320;
+
+}
+/*=====================================
     Client Dahboard -- Personal Product
 ======================================*/
 .client_dashboard_personal_product_list h2{
