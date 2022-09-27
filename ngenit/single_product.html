@@ -117,24 +117,52 @@
 
     <!--============Sidbar & Tab Section Begin================-->
     
-    <section class="container" style="overflow: hidden;">
+    <section class="container tab_sidebar_single_product" style="overflow: hidden;">
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+            <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">OVERVIEW</button>
+            <button class="tablinks" onclick="openCity(event, 'Specification')">SPECIFICATIONS</button>
+            <button class="tablinks" onclick="openCity(event, 'Accessories')">ACCESSORIES</button>
+            <button class="tablinks" onclick="openCity(event, 'Warranties')">WARRANTIES</button>
+            <button class="tablinks" onclick="openCity(event, 'Reviews')">REVIEWS</button>
         </div>
 
-        <div id="London" class="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
+        <div id="Overview" class="tabcontent">
+            <h5 class="my-4">Product overview</h5>
+            <h5 class="my-4"><strong>Processor: Intel Core i5 2.6 GHz (Qty 1) 8 GB RAM DDR4 SDRAM</strong></h5>
+            <h5 class="my-4"><strong>Hard Drive: 256 GB</strong></h5>
+            <h5 class="my-4"><strong>System: Personal computer</strong></h5>
+            <h5 class="my-4"><strong>Warranty: 3 Years</strong></h5>
+
+            <div class="row mt-4">
+                <div class="col-4">
+                    <p><strong>Insight #</strong></p>
+                    <p><strong>Mfr. #</strong></p>
+                    <p><strong>UNSPSC:</strong></p>
+                </div>
+                <div class="col-4">
+                    <p>DT.VWEAA.001</p>
+                    <p>DT.VWEAA.001</p>
+                    <p>43170000</p>
+                </div>
+            </div>
+            
         </div>
 
-        <div id="Paris" class="tabcontent">
+        <div id="Specification" class="tabcontent">
             <h3>Paris</h3>
             <p>Paris is the capital of France.</p> 
         </div>
 
-        <div id="Tokyo" class="tabcontent">
+        <div id="Accessories" class="tabcontent">
+            <h5 class="my-4"><strong>Accessories</strong></h5>
+            <h5 class="my-4"><strong>No accessories found for this item.</strong></h5>
+        </div>
+
+        <div id="Warranties" class="tabcontent">
+            <h5 class="my-4"><strong>No warranties found for this item.</strong></h5>
+        </div>
+
+        <div id="Reviews" class="tabcontent">
             <h3>Tokyo</h3>
             <p>Tokyo is the capital of Japan.</p>
         </div>

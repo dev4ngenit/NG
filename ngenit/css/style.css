@@ -413,16 +413,17 @@ a:hover {
 
 /*Tab sidebar-product Start*/
 
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
+.tab_sidebar_single_product{
+    padding: 0px;
+    border: 1px solid #ccc;
+}
 
 /* Style the tab */
 .tab {
   float: left;
-  border: 1px solid #ccc;
   background-color: #f1f1f1;
   width: 30%;
-  height: 300px;
+  height: 100%;
 }
 
 /* Style the buttons inside the tab */
@@ -438,6 +439,8 @@ body {font-family: "Lato", sans-serif;}
   cursor: pointer;
   transition: 0.3s;
   font-size: 17px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 /* Change background color of buttons on hover */
@@ -447,17 +450,17 @@ body {font-family: "Lato", sans-serif;}
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: white;
+  border-right: none;
+  
 }
 
 /* Style the tab content */
 .tabcontent {
   float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
+  padding: 10px 15px;
   width: 70%;
-  border-left: none;
-  height: 300px;
+  height: auto;
 }
 
 /*Related Product*/
