@@ -28,7 +28,13 @@
 
 <body>
     <div id="wrapper" class="row">
-        <a href="#" id="click_advance"><i class="fa-solid fa-chevron-left fa-lg"></i></a>
+        <a href="#" id="click_advance" onclick="my()"><i class="fa-solid fa-chevron-left fa-lg"></i></a>
+        <a href="#" style="
+        position: absolute;
+        left: 13px;
+        top: 10px;
+        z-index: 9999;
+        " onclick="my2()"><i class="fa-solid fa-align-left fa-lg"></i></a>
         <!--=======Sidebar Start==========-->
         <section class="col-xl-3 col-lg-4 col-sm-12 content m-0" id="display_advance">
             <div class="sidebar_manu_wrapper p-0">
@@ -59,7 +65,7 @@
         <!----Sidebar End---->
         
         <!--=========Content start========-->
-        <div class="container-fluid col-xl-9 col-lg-8 col-sm-12">
+        <div id="cls" class="container-fluid col-xl-9 col-lg-8 col-sm-12">
             <div id="client_dashboard_content_wp" class="row">
 
                 <!--Content welcome Section-->
@@ -103,7 +109,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!--Client Dashboard Sidebar-->
-    <script src="js/jquery.mr.js"></script>
+    <!-- <script src="js/jquery.mr.js"></script> -->
+    <script>
+
+
+        $('#click_advance').click(function() {
+            $('#display_advance').toggle('1000');
+            // $("i", this).toggleClass("fa-solid fa-chevron-left fa-solid fa-align-left");
+        });
+
+
+        $(".fa-chevron-left").show();
+        $(".fa-align-left").hide();
+        function my(){
+            $(".fa-align-left").show();
+            $(".fa-chevron-left").hide();
+        $("#cls").addClass('col-xl-12')
+        }
+        function my2(){
+        $(".fa-chevron-left").show();
+        $("#display_advance").show();
+        $(".fa-align-left").hide();
+        if ($( "#cls" ).hasClass('col-xl-12')) {
+    	$( "#cls" ).removeClass( 'col-xl-12');
+        } 
+
+    }
+
+    </script>
 </body>
 
 </html>

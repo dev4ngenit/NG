@@ -462,7 +462,14 @@ a:hover {
   width: 70%;
   height: auto;
 }
-
+/*----------------*/
+.tab_sidebar_specification ul{
+    padding: 5px;
+}
+.tab_sidebar_specification ul li{
+    list-style-type: none;
+    line-height: 30px;
+}
 /*Related Product*/
 
 .related-product {
