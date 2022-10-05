@@ -1687,11 +1687,11 @@ a:hover {
     color: white;
     transition: .3s;
 }
+
 /*---Content----*/
 #client_dashboard_content_wp{
     background-color: white;
-    padding: 20px;
-    margin: 10px;
+    padding: 25px;
 }
 .client_dashboard_welcome_section{
     margin-top: 10px;
@@ -1729,6 +1729,16 @@ a:hover {
 /*max-width:500px == anything < 500px*/
 /*min-width:500px == anything > 500px*/
 
+
+@media (max-width:380px) {
+    .sidebar_manu_wrapper{
+        width: 450px;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        background-color: #5f5753;
+    }
+}
 @media screen and (min-width:786px)
 {
 
@@ -1741,5 +1751,3 @@ a:hover {
 {
 
 }
-
-
