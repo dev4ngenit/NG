@@ -2200,7 +2200,6 @@ a:hover {
 }
 
 
-
 /*-------------------------*/
 
 .footer_bottom {
@@ -2216,10 +2215,8 @@ a:hover {
 }
 
 .footer_copy {
-    width: 65px;
+    width: 120px;
 }
-
-
 
 .footer_bottom_list ul {
     display: flex;
