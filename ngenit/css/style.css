@@ -2,7 +2,7 @@
     --crimson: #ae0a46;
     --dark-crimson: #880736;
     --text-gray: #3e332d;
-    --text-white:#fff;
+    --text-white: #fff;
 
     --blue: #007bff;
     --indigo: #6610f2;
@@ -25,7 +25,7 @@
     --danger: #dc3545;
     --light: #f8f9fa;
     --dark: #343a40;
-  }
+}
 
 a {
     text-decoration: none;
@@ -34,16 +34,18 @@ a {
 a:hover {
     text-decoration: none;
 }
+
 /*Fixed position*/
 .stick {
-	position:fixed;
-	top:0px;
-	z-index:999999999999;
-	margin:0 auto;
-	width:100%;
+    position: fixed;
+    top: 0px;
+    z-index: 999999999999;
+    margin: 0 auto;
+    width: 100%;
 }
+
 /*common button*/
-.common_button{
+.common_button {
     padding: 10px 40px;
     cursor: pointer;
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -55,34 +57,224 @@ a:hover {
     color: #ae0a46;
     border: 1px solid #5f5753;
 }
-.common_button:hover{
+
+.common_button:hover {
     background-color: #5f5753;
     color: white;
     transition: .3s;
-    border: 1px solid #5f5753;
 }
-.common_button2{
-    padding: 20px 25px;
+
+.common_button2 {
+    padding: 15px 20px;
     cursor: pointer;
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-weight: 500;
     text-align: center;
     display: inline-block;
-    background-color:var(--crimson);
+    background-color: var(--crimson);
     transition: .3s;
     outline: none;
     border: none;
     color: white;
 }
-.common_button2:hover{
+
+.common_button2:hover {
     background-color: var(--dark-crimson);
 }
+
 /*-----End-----*/
 
 
 /*===============================================*/
-        /*========================
+/*========================
+           Cookies Settings page
+        ==========================*/
+/*================================================*/
+
+.cookises_settings_wrapper input[type="checkbox"] {
+    display: block;
+}
+
+.cookises_settings_pop {
+    display: block;
+    background: #fff;
+    width: 730px;
+    height: 95%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: fixed;
+}
+
+#show_cookies:checked~.cookises_settings_pop {
+    display: none;
+}
+
+.cookises_settings_pop .close-btn {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.cookises_settings_pop .close-btn:hover {
+    color: #3498db;
+}
+
+/*--Tab Content Style--*/
+
+.modal_title_cookises{  
+    padding: 15px;
+    border-bottom: 1px solid silver;
+}
+
+.modal_title_cookises img{
+    width: 95px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.modal_title_cookises h2{
+    margin: 0px 0px 0px 40px;
+    display: inline-block; 
+    font-family: arial;
+    font-weight: 600;
+    color: #3e332d;
+    font-size: 24px;
+}
+
+
+
+
+
+/*-----Tab Start----*/
+.tab_cookises_wrapper{
+    display: flex;
+    margin-bottom: 40px;
+    height: calc(100% - 160px);
+}
+
+.tab_cookises_wrapper::-webkit-scrollbar{
+    width: 0px;
+}
+
+.tab_cookises_settings {
+    width: 30%;
+    overflow-y: auto;
+}
+
+/* Style the buttons inside the tab */
+.tab_cookises_settings button {
+    display: block;
+    background-color: #F4F4F4;
+    font-family: arial;
+    font-weight: bold;
+    color: #3e332d;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom: 1px solid silver;
+}
+
+.tab_cookises_settings button:hover {
+    background-color: #ddd;
+}
+
+.tab_cookises_settings button.active {
+    background-color: white;
+    border-left: 10px solid var(--crimson);
+}
+.tab_cookises_settings button.active:last-child {
+    border-bottom: none;
+}
+
+/* Style the tab content */
+
+.tab_cookises_tabcontent {
+    padding: 40px 20px 0px 40px;
+    width: 70%;
+    border-left: none;
+    overflow-y: auto;
+}
+
+
+
+.tab_cookises_tabcontent h5{
+    font-family: arial;
+    font-weight: bold;
+    color: #3e332d;
+    margin-bottom: 10px;
+}
+.tab_cookises_tabcontent p{
+    text-align: justify;
+    font-family: arial;
+    font-weight: bold;
+    color: #3e332d;
+    font-size: 14px;
+    height: auto;
+    overflow: auto;
+}
+.tab_cookises_tabcontent a{}
+
+
+/*----------*/
+.modal_footer_cookises{  
+    border-top: 1px solid silver;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: white;
+}
+
+.btn_footer_cookises {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    background-color: var(--crimson);
+    transition: .3s;
+    outline: none;
+    border: none;
+    color: white;
+    margin: 15px 10px;
+}
+
+.btn_footer_cookises:hover {
+    background-color: var(--dark-crimson);
+}
+.text_footer_cookises{
+    display: flex;
+    justify-content: end;
+    background-color: #F4F4F4;
+    padding: 5px;
+    padding-right: 15px;
+}
+.text_footer_cookises p{
+    margin: 0px;
+}
+/*-----Tab End----*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .cookises_settings_pop {
+        display: block;
+        background: #c65858;
+        width: 90%;
+        padding: 30px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/*===============================================*/
+/*========================
            All Terms & Policies page
         ==========================*/
 /*================================================*/
@@ -100,60 +292,69 @@ a:hover {
 
 /*---------Left Terms Policy------*/
 
-.left_terms_policy{
+.left_terms_policy {
     margin: 0px;
     padding: 0px;
 }
-.left_terms_policy h3{
+
+.left_terms_policy h3 {
     font-size: 24px;
     margin-bottom: 20px;
     font-weight: 100;
     color: var(--text-gray);
     font-family: lato;
 }
-.left_terms_policy h5{
+
+.left_terms_policy h5 {
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 20px;
     margin-top: 10px;
     color: #d40e8c;
 }
-.left_terms_policy ul li{
+
+.left_terms_policy ul li {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 10px;
     font-weight: 500;
 }
-.left_terms_policy ul li em{
+
+.left_terms_policy ul li em {
     color: var(--text-gray) !important;
 }
 
 
-.left_terms_policy a{
+.left_terms_policy a {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 10px;
     color: var(--crimson);
     font-weight: 500;
 }
-.left_terms_policy a:hover{
+
+.left_terms_policy a:hover {
     color: var(--dark-crimson);
 }
-.left_terms_policy a strong{
+
+.left_terms_policy a strong {
     font-size: 14px;
 }
+
 /*---------Right Terms Policy------*/
-.right_terms_policy{
+.right_terms_policy {
     margin: 0px;
 }
-.right_terms_policy h4{
+
+.right_terms_policy h4 {
     font-size: 18px;
     margin-bottom: 20px;
     font-weight: 100;
     color: var(--text-gray);
     font-family: lato;
 }
-.right_terms_policy input[type=Search]{
+
+.right_terms_policy input[type=Search] {
     outline: none;
     width: 100%;
     border: 1px solid gray;
@@ -162,18 +363,22 @@ a:hover {
     font-weight: bold;
     padding: 10px 5px;
 }
+
 /*--------*/
 .order-table {
     border: 1px solid #d4d0ca;
     margin-top: 20px;
 }
-.order-table tr th{
+
+.order-table tr th {
     background-color: #d40e8c;
     color: #fff;
 }
+
 .order-table tr td.firstLine {
     border-right: 1px solid #d4d0ca;
 }
+
 .order-table tr td a {
     color: #d40e8c;
     font-size: 14px;
@@ -183,7 +388,7 @@ a:hover {
 
 
 /*================================================*/
-        /*========================
+/*========================
             Web accessibility page
         ==========================*/
 /*================================================*/
@@ -200,10 +405,12 @@ a:hover {
     font-size: 36px;
     font-weight: 100;
 }
+
 .content_web_accessibility {
     padding-right: 50px;
 }
-.content_web_accessibility p{
+
+.content_web_accessibility p {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 20px;
@@ -211,20 +418,24 @@ a:hover {
     font-weight: 500;
     text-align: justify;
 }
-.content_web_accessibility a{
+
+.content_web_accessibility a {
     color: var(--crimson);
 }
-.content_web_accessibility a:hover{
+
+.content_web_accessibility a:hover {
     color: var(--dark-crimson);
 }
-.content_web_accessibility h1{
+
+.content_web_accessibility h1 {
     font-size: 60px;
     margin-bottom: 20px;
     font-weight: 100;
     color: var(--text-gray);
     font-family: lato;
 }
-.content_web_accessibility h3{
+
+.content_web_accessibility h3 {
     font-size: 40px;
     margin-bottom: 20px;
     font-weight: 100;
@@ -233,12 +444,13 @@ a:hover {
 }
 
 /*---------Web accessibility-Sidebar------*/
-.sidebar_web_accessibility{
+.sidebar_web_accessibility {
     margin: 0px;
     padding: 0px;
     padding-left: 20px;
 }
-.sidebar_web_accessibility h3{
+
+.sidebar_web_accessibility h3 {
     font-size: 40px;
     margin-bottom: 20px;
     font-weight: 100;
@@ -246,16 +458,18 @@ a:hover {
     font-family: lato;
 }
 
-.sidebar_web_accessibility a{
+.sidebar_web_accessibility a {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 10px;
     color: var(--crimson);
     font-weight: 500;
 }
-.sidebar_web_accessibility a:hover{
+
+.sidebar_web_accessibility a:hover {
     color: var(--dark-crimson);
 }
+
 /*----------*/
 .specialist_contect_form {
     margin: 0px;
@@ -265,15 +479,16 @@ a:hover {
     background-color: #f7f6f5;
 }
 
-.specialist_contect_form::after{
+.specialist_contect_form::after {
     content: "";
     position: absolute;
     height: 10px;
     width: 100%;
-    background: linear-gradient(90deg,#ae0a46,#a80b6e 25%,#582873 75%);
+    background: linear-gradient(90deg, #ae0a46, #a80b6e 25%, #582873 75%);
     top: 0px;
     left: 0px;
 }
+
 .form_item_wp {
     margin-bottom: 20px;
     position: relative;
@@ -293,6 +508,7 @@ a:hover {
     outline: none;
     border-bottom: solid 1px #CBC4C3;
 }
+
 .form_label {
     color: var(--mainColor);
     position: absolute;
@@ -302,15 +518,16 @@ a:hover {
     display: none;
 }
 
-.form_input:focus::placeholder{
+.form_input:focus::placeholder {
     color: transparent;
 }
-.form_input:focus~.form_label{
+
+.form_input:focus~.form_label {
     display: block;
 }
 
 /*=================================================*/
-        /*========================
+/*===============================
             Privacy Policy page
         ==========================*/
 /*===================================================*/
@@ -327,91 +544,105 @@ a:hover {
     font-size: 36px;
     font-weight: 100;
 }
-.content_privacy_policy{
+
+.content_privacy_policy {
     padding-right: 40px;
 }
-.content_privacy_policy p{
+
+.content_privacy_policy p {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 20px;
     color: var(--text-gray);
     font-weight: 500;
 }
-.content_privacy_policy a{
+
+.content_privacy_policy a {
     color: var(--crimson);
 }
-.content_privacy_policy a:hover{
+
+.content_privacy_policy a:hover {
     color: var(--dark-crimson);
 }
-.content_privacy_policy h1{
+
+.content_privacy_policy h1 {
     font-size: 40px;
     margin-bottom: 20px;
     font-weight: 100;
     color: var(--text-gray);
     font-family: lato;
 }
-.content_privacy_policy h5{
+
+.content_privacy_policy h5 {
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 20px;
 }
-.content_privacy_policy ul li{
+
+.content_privacy_policy ul li {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 10px;
     color: var(--text-gray);
     font-weight: 500;
 }
+
 /*---------Privacy Policy-Sidebar------*/
 
-.sidebar_privacy_policy{
+.sidebar_privacy_policy {
     margin: 0px;
     padding: 0px;
     padding-left: 40px;
     border-left: 1px solid var(--crimson);
 }
-.sidebar_privacy_policy h3{
+
+.sidebar_privacy_policy h3 {
     font-size: 24px;
     margin-bottom: 20px;
     font-weight: 100;
     color: var(--text-gray);
     font-family: lato;
 }
-.sidebar_privacy_policy h5{
+
+.sidebar_privacy_policy h5 {
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 20px;
     margin-top: 10px;
     color: var(--text-gray);
 }
-.sidebar_privacy_policy ul li{
+
+.sidebar_privacy_policy ul li {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 10px;
     font-weight: 500;
 }
-.sidebar_privacy_policy ul li em{
+
+.sidebar_privacy_policy ul li em {
     color: var(--text-gray) !important;
 }
 
 
-.sidebar_privacy_policy a{
+.sidebar_privacy_policy a {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 10px;
     color: var(--crimson);
     font-weight: 500;
 }
-.sidebar_privacy_policy a:hover{
+
+.sidebar_privacy_policy a:hover {
     color: var(--dark-crimson);
 }
-.sidebar_privacy_policy a strong{
+
+.sidebar_privacy_policy a strong {
     font-size: 14px;
 }
 
 
 /*=================================================*/
-        /*========================
+/*========================
             Common Product page
         ==========================*/
 /*===================================================*/
@@ -430,7 +661,8 @@ a:hover {
     font-size: 60px;
     font-weight: 100;
 }
-.common_product_header h3{
+
+.common_product_header h3 {
     text-align: center;
     font-size: 18px;
     line-height: 44px;
@@ -438,6 +670,7 @@ a:hover {
     padding: 0% 10%;
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
+
 .search_all_product_btn {
     padding: 20px 40px;
     cursor: pointer;
@@ -450,12 +683,14 @@ a:hover {
     background-color: #ae0a46;
     color: #fff;
 }
-.search_all_product_btn:hover{
+
+.search_all_product_btn:hover {
     background-color: #880736;
     color: white;
     transition: .3s;
 }
-.create_your_account_btn{
+
+.create_your_account_btn {
     padding: 20px 40px;
     cursor: pointer;
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -467,25 +702,29 @@ a:hover {
     background-color: #fff;
     color: #ae0a46;
 }
-.create_your_account_btn:hover{
+
+.create_your_account_btn:hover {
     background-color: #5f5753;
     color: white;
     transition: .3s;
 }
-.common_product_item_title{
+
+.common_product_item_title {
     text-align: center;
     margin: 40px 0px;
 }
-.common_product_item_title h3{
+
+.common_product_item_title h3 {
     font-family: lato;
     color: #383d41;
 }
+
 /*-------*/
-.common_product_item_text a{
+.common_product_item_text a {
     text-align: center;
     margin-bottom: 10px;
     color: #ae0a46;
-    font-family: "allumi-2-std","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-family: "allumi-2-std", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 24px;
     display: -webkit-box;
@@ -493,26 +732,29 @@ a:hover {
     -webkit-line-clamp: 2;
     overflow: hidden;
 }
+
 .common_product_item_text a:hover {
     color: #7a0631;
 }
 
 /*--------*/
-.need_help_finding_prodcut{
+.need_help_finding_prodcut {
     background-image: url(../images/help-background-imges.jpg);
     background-attachment: fixed;
-    background-position:center bottom;
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 60px 0px;
 }
+
 .need_help_finding_prodcut h2 {
     text-align: center;
     color: white;
     font-size: 40px;
     font-weight: 100;
 }
-.need_help_finding_prodcut h3{
+
+.need_help_finding_prodcut h3 {
     text-align: center;
     font-size: 16px;
     line-height: 44px;
@@ -520,7 +762,8 @@ a:hover {
     padding: 0% 10%;
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-.finding_product_btn{
+
+.finding_product_btn {
     padding: 20px 40px;
     cursor: pointer;
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -533,33 +776,40 @@ a:hover {
     color: #ae0a46;
     margin-top: 20px;
 }
-.finding_product_btn:hover{
+
+.finding_product_btn:hover {
     background-color: #5f5753;
     color: white;
     transition: .3s;
 }
+
 /*-------------*/
-.transform_devices_wrapper{
+.transform_devices_wrapper {
     padding: 50px 100px;
 }
-.transform_devices_blog{
+
+.transform_devices_blog {
     background-color: #f7f6f5;
     padding: 20px 10px 20px 40px;
 }
-.transform_devices_blog img{
+
+.transform_devices_blog img {
     height: 60px;
 }
-.transform_devices_blog h2{
+
+.transform_devices_blog h2 {
     font-family: lato;
     color: #383d41;
     margin-bottom: 20px;
 }
-.transform_devices_blog p{
+
+.transform_devices_blog p {
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 18px;
     color: #88817d;
 }
-.transform_devices_blog a{
+
+.transform_devices_blog a {
     padding: 10px 40px;
     cursor: pointer;
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -572,54 +822,65 @@ a:hover {
     border: 1px solid black;
     margin-top: 20px;
 }
-.transform_devices_blog a:hover{
+
+.transform_devices_blog a:hover {
     background-color: #5f5753;
     color: white;
     transition: .3s;
 }
+
 /*----------*/
-.common_product_technolgy_deals_wrapper{
+.common_product_technolgy_deals_wrapper {
     background-color: #f7f6f5;
     padding: 50px 0px;
 }
-.technolgy_deals_blog{
-    padding:40px 0px 0px 40px;
+
+.technolgy_deals_blog {
+    padding: 40px 0px 0px 40px;
 }
-.technolgy_deals_blog h2{
+
+.technolgy_deals_blog h2 {
     font-family: lato;
     color: #383d41;
     margin-bottom: 20px;
 }
-.technolgy_deals_blog p{
+
+.technolgy_deals_blog p {
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 18px;
     color: #88817d;
 }
-.technolgy_deals_blog a{
+
+.technolgy_deals_blog a {
     color: #ae0a46;
 }
+
 /*===============================================*/
-            What-we-do Single Product
+What-we-do Single Product
 /*================================================*/
 
 
 /*images gallary*/
-.single_product_images{
+.single_product_images {
     padding: 10px 20px;
 }
-.img_gallery_wrapper{
+
+.img_gallery_wrapper {
     margin-top: 50px;
 }
-.geeks:hover{
+
+.geeks:hover {
     transform: scale(1.1);
     transition: 0.5s;
-    cursor:crosshair;
+    cursor: crosshair;
 }
-.img_gallery_wrapper img{
+
+.img_gallery_wrapper img {
     width: 100px;
     opacity: 0.5;
 }
-.img_gallery_wrapper img:hover{
+
+.img_gallery_wrapper img:hover {
     width: 100px;
     opacity: 1;
     transform: scale(1.1);
@@ -631,106 +892,110 @@ a:hover {
 
 /*single-product about*/
 
-.product__details__text{
-	margin-left: 20px;
+.product__details__text {
+    margin-left: 20px;
 }
+
 .product__details__text h3 {
-	color: #252525;
-	margin-bottom: 16px;
+    color: #252525;
+    margin-bottom: 16px;
 }
 
-.list_price p{
-	font-size: 16px;
-	font-weight: bold;
-}
-.product__details__text h6{
-	font-size: 19px;
-	margin-left: 10px;
+.list_price p {
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.product__details__rating img{
-	width: 25px;
-	height: 25px;
+.product__details__text h6 {
+    font-size: 19px;
+    margin-left: 10px;
 }
+
+.product__details__rating img {
+    width: 25px;
+    height: 25px;
+}
+
 .product__details__rating span {
-	color: #d51a5f;
-	margin-left: 4px;
+    color: #d51a5f;
+    margin-left: 4px;
 }
 
 .product__details__price {
-	font-size: 30px;
-	color: #6e6259;
-	font-weight: 600;
+    font-size: 30px;
+    color: #6e6259;
+    font-weight: 600;
 }
 
-.product-specs{
-	margin-left: 15px;
-	margin-top: 15px;
-	margin-bottom: 15px;
+.product-specs {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .product__details__text .primary-btn {
-	padding: 16px 28px 14px;
-	margin-right: 6px;
-	margin-bottom: 5px;
+    padding: 16px 28px 14px;
+    margin-right: 6px;
+    margin-bottom: 5px;
 }
 
-.spec-label0{
-	padding-left: 20px;
+.spec-label0 {
+    padding-left: 20px;
 }
 
 .product__details__text ul {
-	border-top: 1px solid #ebebeb;
-	padding-top: 40px;
-	margin-top: 50px;
+    border-top: 1px solid #ebebeb;
+    padding-top: 40px;
+    margin-top: 50px;
 }
 
 .product__details__text ul li {
-	font-size: 16px;
-	color: #1c1c1c;
-	list-style: none;
-	line-height: 36px;
+    font-size: 16px;
+    color: #1c1c1c;
+    list-style: none;
+    line-height: 36px;
 }
 
 .product__details__text ul li b {
-	font-weight: 700;
-	width: 170px;
-	display: inline-block;
+    font-weight: 700;
+    width: 170px;
+    display: inline-block;
 }
 
 .product__details__text ul li span samp {
-	color: #dd2222;
+    color: #dd2222;
 }
 
 .product__details__text ul li .share {
-	display: inline-block;
+    display: inline-block;
 }
 
 .product__details__text ul li .share a {
-	display: inline-block;
-	font-size: 15px;
-	color: #1c1c1c;
-	margin-right: 25px;
+    display: inline-block;
+    font-size: 15px;
+    color: #1c1c1c;
+    margin-right: 25px;
 }
 
 .product__details__text ul li .share a:last-child {
-	margin-right: 0;
+    margin-right: 0;
 }
 
 /*---------------------------*/
-.product_quantity_wraper{
-	background-color: #ebebeb;
-	padding: 10px;
-	margin-bottom: 20px;
+.product_quantity_wraper {
+    background-color: #ebebeb;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 .pro-qty {
-	width: 220px;
-	height: 65px;
-	text-align: center;
-	background: #f5f5f5;
-	border: 1px solid #cbc4c3;
+    width: 220px;
+    height: 65px;
+    text-align: center;
+    background: #f5f5f5;
+    border: 1px solid #cbc4c3;
 }
+
 .counter {
     width: 150px;
     margin: auto;
@@ -739,6 +1004,7 @@ a:hover {
     align-items: center;
     justify-content: center;
 }
+
 .counter input {
     width: 50px;
     border: 0;
@@ -750,6 +1016,7 @@ a:hover {
     appearance: none;
     outline: 0;
 }
+
 .counter span {
     display: block;
     font-size: 25px;
@@ -759,100 +1026,108 @@ a:hover {
     user-select: none;
 }
 
-.product_add_to_card{
+.product_add_to_card {
     width: 220px;
     padding: 20px;
     text-align: center;
     height: 65px;
-	background-color: #d51a5f;
-	font-family: arial;
-	border: none;
+    background-color: #d51a5f;
+    font-family: arial;
+    border: none;
 }
-.product_add_to_card:hover{
+
+.product_add_to_card:hover {
     background-color: #6f062d;
     transition: 1s;
 }
-.product_add_to_card a{
+
+.product_add_to_card a {
     color: white;
 }
-.need_help{
-	display: inline-block;
-	color: #666666;
+
+.need_help {
+    display: inline-block;
+    color: #666666;
     text-align: center;
 }
 
-.product_your_purchase{
-	text-decoration: none;
-	color:#d51a5f;
+.product_your_purchase {
+    text-decoration: none;
+    color: #d51a5f;
 }
 
 /*Tab sidebar-product Start*/
 
-.tab_sidebar_single_product{
+.tab_sidebar_single_product {
     padding: 0px;
     border: 1px solid #ccc;
 }
 
 /* Style the tab */
 .tab {
-  float: left;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 100%;
+    float: left;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 100%;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-  background-color: white;
-  border-right: none;
-  
+    background-color: white;
+    border-right: none;
+
 }
 
 /* Style the tab content */
 .tabcontent {
-  float: left;
-  padding: 10px 15px;
-  width: 70%;
-  height: auto;
+    float: left;
+    padding: 10px 15px;
+    width: 70%;
+    height: auto;
 }
+
 /*----------------*/
-.tab_sidebar_specification ul{
+.tab_sidebar_specification ul {
     padding: 5px;
 }
-.tab_sidebar_specification ul li{
+
+.tab_sidebar_specification ul li {
     list-style-type: none;
     line-height: 30px;
 }
+
 /*Related Product*/
 
 .related-product {
-	padding-bottom: 30px;
+    padding-bottom: 30px;
 }
+
 .related__product__title {
-	margin-bottom: 70px;
+    margin-bottom: 70px;
 }
+
 .title_top_heading {
     font-size: 36px;
     line-height: 48px;
@@ -860,12 +1135,14 @@ a:hover {
     margin-bottom: 14px;
     font-weight: 100;
 }
+
 .product_item {
     padding: 15px;
     transition: all linear 0.3s;
     box-shadow: 0px 0px 5px rgb(0 0 0 / 5%);
     margin: 0px 10px;
 }
+
 .product_item_thumbnail {
     width: 100%;
     max-width: 150px;
@@ -915,7 +1192,8 @@ a:hover {
     line-height: 15px;
     transition: all linear 0.3s;
 }
-.product_button:hover{
+
+.product_button:hover {
     background-color: #5f5753;
     color: #fff;
     transition: all linear 0.3s;
@@ -1091,12 +1369,14 @@ a:hover {
     margin-top: 10px;
     font-size: 18px;
 }
+
 .product_apply_filter_btn a {
     padding: 10px 30px;
     background-color: #ae0a46;
     color: white;
     text-align: center;
 }
+
 .product_apply_filter_btn a:hover {
     background-color: #76022d;
     color: white;
@@ -1131,12 +1411,14 @@ a:hover {
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     text-rendering: optimizeLegibility;
 }
+
 .product_content_item h6 {
     margin: 10px 0;
     color: #6c757d;
     font-size: 14px;
     font-family: "allumi-2-std", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
+
 .product_content_item p {
     color: #3e332d;
     font-size: 14px;
@@ -1153,6 +1435,7 @@ a:hover {
     color: white;
     text-align: center;
 }
+
 .product_add_bascket_btn a:hover {
     background-color: #76022d;
     color: white;
@@ -1617,7 +1900,7 @@ a:hover {
 
 /*-********************************-*/
 /*-********************************-*/
-        /*Client Dashboard*/
+/*Client Dashboard*/
 /*-********************************-*/
 /*-********************************-*/
 
@@ -1625,7 +1908,7 @@ a:hover {
 
 
 /*common button*/
-.common_button_dashboard{
+.common_button_dashboard {
     padding: 10px 40px;
     cursor: pointer;
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -1636,96 +1919,110 @@ a:hover {
     background-color: #ae0a46;
     color: white;
 }
-.common_button_dashboard:hover{
+
+.common_button_dashboard:hover {
     background-color: #7a0932;
     color: white;
     transition: .3s;
 }
+
 /*-----End-----*/
 
 /*=====================================
     Client Dahboard -- Profile
 ======================================*/
-.client_db_profile_header{
+.client_db_profile_header {
     margin: 0px;
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid #ae0a46;
 }
-.client_db_profile_header img{
+
+.client_db_profile_header img {
     clip-path: circle();
     width: 250px;
     display: inline;
 }
-.client_db_profile_title h3{
+
+.client_db_profile_title h3 {
     margin-top: 20px;
     color: #222;
     font-family: arial;
     font-style: normal;
 }
-.client_db_profile_title p{
-}
-.client_db_details h3{
+
+.client_db_profile_title p {}
+
+.client_db_details h3 {
     color: #222;
     font-family: lato;
     font-style: normal;
 }
-.client_db_about h3{
+
+.client_db_about h3 {
     color: #222;
     font-family: lato;
     font-style: normal;
 }
-.client_db_about p{
+
+.client_db_about p {
     font-size: 16px;
     color: #222;
     font-family: arial;
     font-style: normal;
 }
-.client_db_about ul{
+
+.client_db_about ul {
     margin: 0px;
     padding: 0px;
 }
-.client_db_about ul li{
+
+.client_db_about ul li {
     list-style-type: none;
     float: left;
     margin-right: 10px;
     color: white;
 }
-.client_db_about ul li a{
+
+.client_db_about ul li a {
     color: white;
     background-color: #ae0a46;
     padding: 4px 8px;
     border-radius: 5px;
 }
-.client_db_about ul li a:hover{
+
+.client_db_about ul li a:hover {
     background-color: #510320;
 
 }
+
 /*=====================================
     Client Dahboard -- Personal Product
 ======================================*/
-.client_dashboard_personal_product_list h2{
+.client_dashboard_personal_product_list h2 {
     font-family: lato;
     font-style: normal;
     font-weight: 100;
     color: #383d41;
 }
-.client_dashboard_personal_product_list p{
 
-}
-.personal_product_list_add_item label{
+.client_dashboard_personal_product_list p {}
+
+.personal_product_list_add_item label {
     color: #222;
     font-size: 16px;
     font-weight: 100;
     font-family: arial;
     margin-top: 10px;
 }
-#product_input{
+
+#product_input {
     width: 35%;
     margin-left: 10px;
     color: #495057;
 }
-#product_input input[type=text]{
+
+#product_input input[type=text] {
     border: 1px solid gray;
     color: #495057;
     outline: none;
@@ -1734,7 +2031,8 @@ a:hover {
     opacity: 0.7;
     width: 100%;
 }
-.personal_product_list_add_item button{
+
+.personal_product_list_add_item button {
     color: white;
     background-color: #ae0a46;
     padding: 10px 20px;
@@ -1743,20 +2041,23 @@ a:hover {
     opacity: 0.7;
     margin-left: 10px;
 }
-.btn_delete{
+
+.btn_delete {
     background-color: white;
     border: none;
     color: #ae0a46;
     outline: none;
     font-size: 18px;
 }
-.btn_add_to_card{
+
+.btn_add_to_card {
     background-color: #ae0a46;
     color: #fff;
     padding: 10px 20px;
     outline: none;
     border: none;
 }
+
 /*=====================================
     Client Dahboard Content-resources
 ======================================*/
@@ -1781,7 +2082,8 @@ a:hover {
     width: 80%;
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-.content_resources_search input[type=text]{
+
+.content_resources_search input[type=text] {
     width: 75%;
     height: auto;
     background-color: #ffffff;
@@ -1792,7 +2094,8 @@ a:hover {
     padding-left: 20px;
     outline: none;
 }
-.content_resources_search button{
+
+.content_resources_search button {
     width: 23%;
     background-color: #ae0a46;
     border: none;
@@ -1800,13 +2103,15 @@ a:hover {
     padding: 10px 0px;
     outline: none;
 }
-.content_resources_search button:hover{
+
+.content_resources_search button:hover {
     background-color: #7a0932;
     color: white;
     transition: .3s;
 }
+
 /*----------------*/
-.title_h2{
+.title_h2 {
     text-align: center;
     color: #222;
     margin: 10px 0;
@@ -1814,31 +2119,39 @@ a:hover {
     font-family: lato;
     margin: 40px 0px;
 }
-.faq-answers a{
+
+.faq-answers a {
     color: #222;
 }
-.faq-answers a:hover{
+
+.faq-answers a:hover {
     color: #ae0a46;
 }
-.terms_list a{
+
+.terms_list a {
     color: #ae0a46;
 }
-.terms_list a:hover{
+
+.terms_list a:hover {
     color: #6a0aae;
 }
+
 /*------------------*/
-.explore_knowledge_wrapper{
+.explore_knowledge_wrapper {
     margin-bottom: 50px;
 }
-.popular_published_answers_wrapper{
+
+.popular_published_answers_wrapper {
     background-color: #f7f6f5;
     padding: 40px 0px;
 }
-.terms_conditions_wrapper{
+
+.terms_conditions_wrapper {
     background-color: #f7f6f5;
     padding: 40px 0px;
     margin-top: 60px;
 }
+
 /*====================================
     Order Track Page--cliden Dashboard 
 =======================================*/
@@ -1853,6 +2166,7 @@ a:hover {
     flex-direction: row;
     align-items: center;
 }
+
 .search_order_tracking input {
     all: unset;
     font: 16px system-ui;
@@ -1862,26 +2176,30 @@ a:hover {
     height: auto;
     padding: 10px 0px;
     padding-left: 20px;
-    outline:none;
+    outline: none;
 }
+
 #form button {
     color: #fff;
     width: 20%;
     padding: 10px 0px;
     margin-left: 1%;
-    outline:none;
+    outline: none;
     background: #ae0a46;
     border: none;
 }
-#form button:hover{
+
+#form button:hover {
     background: #860333;
     transition: .3s;
 }
-#form ::placeholder{
+
+#form ::placeholder {
     color: #ae0a46;
 }
+
 /*-----------------*/
-.card-img img{
+.card-img img {
     margin-top: -60px;
     border-radius: 50%;
     width: 100px;
@@ -1902,8 +2220,9 @@ a:hover {
 .card-thumb:hover {
     transform: translateY(-8px);
     opacity: 1;
-    color: #ae0a46; 
+    color: #ae0a46;
 }
+
 .card-thumb h4 {
     text-align: center;
     font-size: 18px;
@@ -1912,7 +2231,7 @@ a:hover {
     font-family: "allumi-2-std", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-.card-thumb ul{
+.card-thumb ul {
     margin: 20px 0px;
     padding: 0px;
     text-align: center;
@@ -1921,10 +2240,12 @@ a:hover {
     font-size: 14px;
     color: #3e332d;
 }
-.card-thumb ul li{
+
+.card-thumb ul li {
     list-style-type: none;
-    
+
 }
+
 .card-thumb ul li a {
     color: #222;
 }
@@ -1932,7 +2253,8 @@ a:hover {
 .card-thumb ul li a:hover {
     color: #ae0a46;
 }
-.order_tracking_btn a{
+
+.order_tracking_btn a {
     padding: 10px 20px;
     cursor: pointer;
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -1943,21 +2265,25 @@ a:hover {
     background-color: #ffffff;
     color: #3e332d;
 }
-.order_tracking_btn a:hover{
+
+.order_tracking_btn a:hover {
     background-color: #3e332d;
     color: white;
     transition: .3s;
 }
+
 /*order details*/
-.client_db_oredr_details{
+.client_db_oredr_details {
     margin: 40px 0px;
     width: 100%;
 }
-.client_db_oredr_details table{
+
+.client_db_oredr_details table {
     margin: 0px;
     padding: 0px;
 }
-.client_db_oredr_details .btn_action{
+
+.client_db_oredr_details .btn_action {
     background-color: rgb(0, 94, 255);
     padding: 5px 10px;
     color: white;
@@ -1968,46 +2294,52 @@ a:hover {
 /*=============================
     Client Dashboard Home page
 ===============================*/
-#wrapper{
+#wrapper {
     background: #dfdfdd;
 }
+
 /*---sidebar Toggle---*/
-#click_advance{
+#click_advance {
     margin-left: 300px;
     margin-top: 30px;
     position: absolute;
     z-index: 50000;
     color: #222;
 }
-#click_advance .fa-align-left{
+
+#click_advance .fa-align-left {
     margin-left: -260px;
     color: #5f5753;
     display: block;
 }
+
 /*---sidebar menu---*/
-.sidebar_manu_wrapper{
+.sidebar_manu_wrapper {
     width: 100%;
     height: 100%;
     background-color: #5f5753;
 }
 
-.sidebar-manu{
+.sidebar-manu {
     background-color: white;
     padding: 20px;
 }
-.sidebar-manu h2{
+
+.sidebar-manu h2 {
     font-size: 32px;
     line-height: 44px;
     color: rgb(66, 65, 65);
     font-family: lato;
     font-weight: 100;
 }
-.sidebar-manu p{
+
+.sidebar-manu p {
     font-size: 16px;
     color: rgb(66, 65, 65);
     font-family: lato;
 }
-.common_button_logout{
+
+.common_button_logout {
     padding: 5px 20px;
     cursor: pointer;
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -2023,78 +2355,91 @@ a:hover {
     display: block;
     color: white;
 }
-.sidebar-nav p{
+
+.sidebar-nav p {
     padding: 20px 0px;
     padding-left: 20px;
     margin: 0;
     cursor: pointer;
 }
-.sidebar-nav p:hover{
+
+.sidebar-nav p:hover {
     padding: 20px 0px;
     padding-left: 20px;
     background-color: #312b2d;
-    display: block;;
+    display: block;
+    ;
 }
-.sidebar-nav a{
+
+.sidebar-nav a {
     display: block;
     color: white;
     padding: 20px 0px;
     padding-left: 20px;
 }
-.sidebar-nav a:hover{
+
+.sidebar-nav a:hover {
     background-color: #312b2d;
     display: block;
     color: white;
     padding: 20px 0px;
     padding-left: 20px;
 }
-.accordion-body a{
+
+.accordion-body a {
     background-color: #ffffff;
     color: #222;
 }
-.plusminus{
+
+.plusminus {
     font-weight: bolder;
     font-size: 20px;
 }
 
-.common_button_logout:hover{
+.common_button_logout:hover {
     background-color: #7a0932;
     color: white;
     transition: .3s;
 }
 
 /*---Content----*/
-#client_dashboard_content_wp{
+#client_dashboard_content_wp {
     background-color: white;
     padding: 25px;
 }
-.client_dashboard_welcome_section{
+
+.client_dashboard_welcome_section {
     margin-top: 10px;
 }
-.client_dashboard_welcome_section h2{
+
+.client_dashboard_welcome_section h2 {
     font-size: 36px;
     line-height: 44px;
     color: rgb(66, 65, 65);
     font-family: lato;
     margin: 10px 0px 20px;
 }
-.client_dashboard_welcome_section p{
+
+.client_dashboard_welcome_section p {
     font-size: 18px;
     line-height: 44px;
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     color: #222;
 }
-.client_dashboard_blog{
+
+.client_dashboard_blog {
     margin-top: 20px;
 }
-.client_dashboard_blog h2{
+
+.client_dashboard_blog h2 {
     font-size: 36px;
     line-height: 44px;
     color: rgb(66, 65, 65);
     font-family: lato;
     margin-bottom: 20px;
 }
-.client_dashboard_blog ul li a{
+
+.client_dashboard_blog ul li a {
     font-size: 18px;
     line-height: 44px;
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -2111,7 +2456,7 @@ a:hover {
     background: linear-gradient(90deg, #ae0a46, #a80b6e, #582873);
 }
 
-.footer_top p{
+.footer_top p {
     text-align: center;
     font-size: 24px;
     line-height: 30px;
@@ -2125,77 +2470,87 @@ a:hover {
     background-color: #222222;
 }
 
-.footer_item_wrapper{
+.footer_item_wrapper {
     padding: 20px;
 }
 
-.footer_item_wrapper h6{
+.footer_item_wrapper h6 {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 12px;
     color: var(--text-white);
 }
-.footer_item_wrapper p{
+
+.footer_item_wrapper p {
     color: var(--text-white);
     padding-right: 5%px;
     text-align: justify;
 }
 
-.footer_item_logo{
+.footer_item_logo {
     margin-top: 40px;
 }
-.footer_item_logo h6 a{
+
+.footer_item_logo h6 a {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 12px;
     color: var(--text-white);
 }
-.footer_item_logo h6 a:hover{
+
+.footer_item_logo h6 a:hover {
     color: var(--light);
 }
-.footer_item_logo img{
+
+.footer_item_logo img {
     width: 100px;
 }
 
-.footer_nav_list ul{
+.footer_nav_list ul {
     margin: 0px;
     padding: 0px;
 }
-.footer_nav_list ul li{
+
+.footer_nav_list ul li {
     list-style-type: none;
 }
-.footer_nav_list ul li a{
+
+.footer_nav_list ul li a {
     color: var(--text-white);
 }
+
 .footer_nav_list ul li a:hover {
     color: hsla(30, 11%, 96%, .7);
 }
 
 
 
-.social_icon_wrapper{
+.social_icon_wrapper {
     background-color: #222222;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
 }
 
-.footer_social_icon ul{
+.footer_social_icon ul {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0px;
     padding: 0px;
 }
-.footer_social_icon ul li{
+
+.footer_social_icon ul li {
     list-style-type: none;
     margin: 20px 20px;
 }
-.footer_social_icon ul li a i{
+
+.footer_social_icon ul li a i {
     color: var(--text-white);
     font-size: 18px;
     transition: .4s;
 }
-.footer_social_icon ul li a i:hover{
+
+.footer_social_icon ul li a i:hover {
     color: var(--dark-crimson);
 }
 
@@ -2228,19 +2583,28 @@ a:hover {
     margin: 0px;
 }
 
-.footer_bottom_list ul li{
+.footer_bottom_list ul li {
     list-style-type: none;
 }
+
 .footer_bottom_list ul li a {
     font-size: 14px;
     display: inline-block;
     text-align: center;
     color: var(--text-white);
 }
-.footer_bottom_list ul li a:hover{
+
+.footer_bottom_list ul li a:hover {
     color: hsla(30, 11%, 96%, .7);
 }
 
+/*Modal-coocies setting*/
+.footer_bottom_list ul li label {
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+    color: var(--text-white);
+}
 
 /* 
 ======================
@@ -2248,28 +2612,25 @@ a:hover {
 ======================
 */
 
+
+/* Smartphones (portrait) */
+@media only screen and (max-width: 320px) {
+    /* Styles */
+}
+
+/* iPads (portrait and landscape)  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Styles */
+}
+
+
 /*max-width:500px == anything < 500px*/
 /*min-width:500px == anything > 500px*/
 
+@media screen and (max-width:320px) {}
 
-@media (max-width:380px) {
-    .sidebar_manu_wrapper{
-        width: 450px;
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-        background-color: #5f5753;
-    }
-}
-@media screen and (min-width:786px)
-{
+@media screen and (min-width:786px) {}
 
-}
-@media screen and (min-width:992px)
-{
+@media screen and (min-width:992px) {}
 
-}
-@media screen and (min-width:1200px)
-{
-
-}
+@media screen and (min-width:1200px) {}
