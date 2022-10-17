@@ -289,6 +289,9 @@ a:hover {
 
 
 /*---------Cookie List-----------*/
+.Cookies_details_wrapper{
+    display: none;
+}
 .cookie_list_filter{
     display: flex;
 }

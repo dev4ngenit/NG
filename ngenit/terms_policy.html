@@ -135,7 +135,7 @@
         <div class="footer_middle">
             <div class="row footer_middle_wrapper">
                 <!-- item -->
-                <div class="col-lg-3 col-md-6 col-sm-12 footer_item_wrapper">
+                <div class="col-lg-4 col-md-12 col-sm-12 footer_item_wrapper">
                     <!-- title -->
                     <h6>Newsletter</h6>
                     <!-- text -->
@@ -150,50 +150,60 @@
                 </div>
 
                 <!-- item -->
-                <div class="col-lg-3 col-md-6 col-sm-12 footer_item_wrapper">
+                <div class="col-lg-2 col-md-6 col-sm-12 footer_item_wrapper">
                     <!-- title -->
                     <h6>About NgenIt</h6>
                     <!-- nav list -->
                     <div class="footer_nav_list">
                         <ul>
                             <li><a href="">Company overview</a></li>
-                            <li><a href="">Awards</a></li>
-                            <li><a href="">Corporate citizenship</a></li>
-                            <li><a href="">Diversity & inclusion</a></li>
-                            <li><a href="">Leadership team</a></li>
-                            <li><a href="">Careers</a></li>
-                            <li><a href="">Insight Public Sector | IPS</a></li>
+                            <li><a href="">Principal</a></li>
+                            <li><a href="">Partners</a></li>
+                            <li><a href="">Clients</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- item -->
-                <div class="col-lg-3 col-md-6 col-sm-12 footer_item_wrapper">
+                <div class="col-lg-2 col-md-6 col-sm-12 footer_item_wrapper">
                     <!-- title -->
-                    <h6 class="main_footer_item_title">Press and engagements</h6>
+                    <h6 class="main_footer_item_title">Products & Services</h6>
                     <!-- nav list -->
                     <div class="footer_nav_list">
                         <ul>
-                            <li><a href="">Events</a></li>
-                            <li><a href="">Newsroom</a></li>
-                            <li><a href="">Investor relations</a></li>
-                            <li><a href="">Parnterships</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Solutions</a></li>
+                            <li><a href="">Industry</a></li>
+                            <li><a href="">TechViews</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- item -->
-                <div class="col-lg-3 col-md-6 col-sm-12 footer_item_wrapper">
+                <div class="col-lg-2 col-md-6 col-sm-12 footer_item_wrapper">
+                    <!-- title -->
+                    <h6 class="main_footer_item_title">Features & Knowledge </h6>
+                    <!-- nav list -->
+                    <div class="footer_nav_list">
+                        <ul>
+                            <li><a href="">Knowledge base</a></li>
+                            <li><a href="">NGEN IT Account</a></li>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="col-lg-2 col-md-6 col-sm-12 footer_item_wrapper">
                     <!-- title -->
                     <h6 class="main_footer_item_title">Help And Support</h6>
                     <!-- nav list -->
                     <div class="footer_nav_list">
                         <ul>
                             <li><a href="">Contact us</a></li>
-                            <li><a href="">OneCall support</a></li>
-                            <li><a href="">Knowledge base</a></li>
-                            <li><a href="">MyInsight Account</a></li>
-                            <li><a href="">Order tracking</a></li>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Order Helps</a></li>
+                            <li><a href="">Order Tracks</a></li>
+                            <li><a href="">Supports</a></li>
                     </div>
                 </div>
             </div>
@@ -224,8 +234,8 @@
                         <li><a href="./privacy_policy.html">Privacy policy</a></li>
                         <li><a href="./terms_policy.html">All Terms & Policies</a></li>
                         <li><a href="./web_accessibility.html">Web Accessibility</a></li>
-                        <li><a href="">Tech glossary</a></li>
-                        <li><a href="">Sitemap</a></li>
+                        <li><a href="./tech_glossary.html">Tech glossary</a></li>
+                        <li><a href="./sitemap.html">Sitemap</a></li>
                         <li><label for="show_cookies">Cookies settings</label></li>
                     </ul>
                 </div>
@@ -277,7 +287,7 @@
                     <div class="d-flex justify-content-between">
                         <h5>Performance cookies</h5>
                         <label class="switch">
-                            <input type="checkbox" id="myCheck" onclick="myFunction()" checked>
+                            <input type="checkbox" id="myCheckboxbtn" onclick="myCheckboxbtn()" checked>
                             <span class="slider round"></span>
                         </label>
                     </div>
@@ -291,7 +301,7 @@
                     <div class="d-flex justify-content-between">
                         <h5>Functional cookies</h5>
                         <label class="switch">
-                            <input type="checkbox" id="myCheck1" onclick="myFunction1()" checked>
+                            <input type="checkbox" id="myCheckboxbtn1" onclick="myCheckboxbtn1()" checked>
                             <span class="slider round"></span>
                         </label>
                     </div>
@@ -305,7 +315,7 @@
                     <div class="d-flex justify-content-between">
                         <h5>Targeting cookies</h5>
                         <label class="switch">
-                            <input type="checkbox" id="myCheck2" onclick="myFunction2()" checked>
+                            <input type="checkbox" id="myCheckboxbtn2" onclick="myCheckboxbtn2()" checked>
                             <span class="slider round"></span>
                         </label>
                     </div>
@@ -336,79 +346,13 @@
                 </div>
             </div>
         </div>
-     </section>
+    </section>
 
-
-     
-
-    <script>
-        //-------------Check Box Show Hide
-        function myFunction() {
-          var checkBox = document.getElementById("myCheck");
-          var btn = document.getElementById("btn_show");
-          if (checkBox.checked == true){
-            btn.style.display = "block";
-          } else {
-            btn.style.display = "none";
-          }
-        }
-        function myFunction1() {
-          var checkBox = document.getElementById("myCheck1");
-          var btn = document.getElementById("btn_show");
-          if (checkBox.checked == true){
-            btn.style.display = "block";
-          } else {
-            btn.style.display = "none";
-          }
-        }
-        function myFunction2() {
-          var checkBox = document.getElementById("myCheck2");
-          var btn = document.getElementById("btn_show");
-          if (checkBox.checked == true){
-            btn.style.display = "block";
-          } else {
-            btn.style.display = "none";
-          }
-        }
-        //-----------------Cookies Details Btn
-        function switchVisible() {
-            if (document.getElementById('Cookies').style.display == 'none') {
-                    document.getElementById('Cookies').style.display = 'flex';
-                    document.getElementById('Cookies_details').style.display = 'none';
-                }
-            else {
-                    document.getElementById('Cookies').style.display = 'none';
-                    document.getElementById('Cookies_details').style.display = 'flex';
-                }
-        }
-    </script>
-
-
-
-
-
-
-    <script>
-        //---------------Tab button content show hide
-        function openCity(evt, cityName) {
-          var i, tab_cookises_tabcontent, tablinks;
-          tab_cookises_tabcontent = document.getElementsByClassName("tab_cookises_tabcontent");
-          for (i = 0; i < tab_cookises_tabcontent.length; i++) {
-            tab_cookises_tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
-        }
-        
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
-
+    
+    <!--==============USE LINK================-->
     <script src="libs/bootstrap/js/bootstrap.js"></script>
+    <script src="./js/javascript.mr.js"></script>
+
 </body>
 
 </html>
