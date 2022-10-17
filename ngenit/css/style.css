@@ -26,7 +26,6 @@
     --light: #f8f9fa;
     --dark: #343a40;
 }
-
 a {
     text-decoration: none;
 }
@@ -34,7 +33,6 @@ a {
 a:hover {
     text-decoration: none;
 }
-
 /*Fixed position*/
 .stick {
     position: fixed;
@@ -85,7 +83,6 @@ a:hover {
 
 /*-----End-----*/
 
-
 /*===============================================*/
 /*========================
            Cookies Settings page
@@ -93,15 +90,15 @@ a:hover {
 /*================================================*/
 
 .cookises_settings_wrapper input[type="checkbox"] {
-    display: block;
+    display: none;
 }
 
 .cookises_settings_pop {
-    display: block;
+    display: none;
     background: #fff;
     width: 730px;
     height: 95%;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
@@ -109,9 +106,9 @@ a:hover {
 }
 
 #show_cookies:checked~.cookises_settings_pop {
-    display: none;
+    display: block;
 }
-
+.new{}
 .cookises_settings_pop .close-btn {
     position: absolute;
     right: 30px;
@@ -170,7 +167,8 @@ a:hover {
     display: block;
     background-color: #F4F4F4;
     font-family: arial;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 14px;
     color: #3e332d;
     padding: 10px 20px;
     width: 100%;
@@ -189,6 +187,7 @@ a:hover {
 .tab_cookises_settings button.active {
     background-color: white;
     border-left: 10px solid var(--crimson);
+    padding-left: 10px;
 }
 .tab_cookises_settings button.active:last-child {
     border-bottom: none;
@@ -197,7 +196,7 @@ a:hover {
 /* Style the tab content */
 
 .tab_cookises_tabcontent {
-    padding: 40px 20px 0px 40px;
+    padding: 20px 20px 20px 40px;
     width: 70%;
     border-left: none;
     overflow-y: auto;
@@ -210,6 +209,7 @@ a:hover {
     font-weight: bold;
     color: #3e332d;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .tab_cookises_tabcontent p{
     text-align: justify;
@@ -219,10 +219,86 @@ a:hover {
     font-size: 14px;
     height: auto;
     overflow: auto;
+    cursor: pointer;
 }
-.tab_cookises_tabcontent a{}
+.tab_cookises_tabcontent a{
+    color: var(--crimson);
+    transition: .3s;
+    font-weight: bold;
+    font-size: 14px;
+}
+.tab_cookises_tabcontent a:hover{
+    color: var(--dark-crimson);
+    text-decoration: underline;
+}
+
+/*-----On Off Button-----*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 15px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  switch input:checked + .slider {
+    background-color: var(--crimson);
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 28px;
+    left: 0px;
+    bottom: -6px;
+    background-color: #7d7d7d;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+ 
+.switch  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(25px);
+    background-color: #ae0a46;
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
 
+/*---------Cookie List-----------*/
+.cookie_list_filter{
+    display: flex;
+}
+.cookie_list_filter button{
+    background-color: var(--crimson);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
 /*----------*/
 .modal_footer_cookises{  
     border-top: 1px solid silver;
@@ -251,6 +327,7 @@ a:hover {
 .btn_footer_cookises:hover {
     background-color: var(--dark-crimson);
 }
+
 .text_footer_cookises{
     display: flex;
     justify-content: end;
@@ -261,6 +338,12 @@ a:hover {
 .text_footer_cookises p{
     margin: 0px;
 }
+
+
+
+#Div2 {
+    display: none;
+  }
 /*-----Tab End----*/
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
@@ -272,6 +355,215 @@ a:hover {
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     }
 }
+
+/*===============================================*/
+/*=================================
+          Tech glossary page
+        ==========================*/
+/*================================================*/
+.tech_glossary_header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+}
+.tech_glossary_header h3 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 44px;
+    color: #fff;
+    font-weight: bolder;
+    padding: 0% 10%;
+    font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.tech_glossary_header h1 {
+    text-align: center;
+    color: white;
+    font-family: lato;
+    font-style: normal;
+    font-size: 60px;
+    font-weight: 100;
+}
+.tech_glossary_area_left p {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    color: #3e332d;
+}
+
+/*-------Browse Alphabetically--------*/
+.tech_glossary_area_left h4 {
+    color: #222;
+    font-family: lato;
+    font-style: normal;
+    font-size: 26px;
+    font-weight: 100;
+}
+
+.tech_glossary_area_left .search_glossary input{
+    outline: none;
+    margin:1px 0px 40px 0px;
+    width: 100%;
+    border: 1px solid silver;
+    padding: 5px 20px;
+    color: var(--crimson);
+}
+.tech_glossary_area_left .search_glossary input:focus::placeholder{
+    color: var(--dark);
+    opacity: .5;
+}
+.tech_glossary_area_left .search_glossary input:focus{
+    border: 1px solid #005885;
+}
+
+
+.tech_glossary_area_left .browse_alphabetically h2 {
+    font-weight: 100;
+    font-size: 36px;
+    line-height: 1.16em;
+    font-family: lato;
+    text-rendering: optimizeLegibility;
+    color: #222;
+}
+.browse_alphabetically .advanceto_index {
+    margin: 10px 0px 20px 0px;
+    cursor: pointer;
+}
+.advanceto_index a{
+    color: var(--crimson);
+    margin-right: 5px;
+    cursor: pointer;
+}
+.advanceto_index a:hover{
+    color: var(--blue);
+}
+.letter_content_item .letter_content_title{
+    font-size: 28px;
+    padding-bottom: 5px;
+    color: #222;
+    font-family: lato;
+    font-weight: 100;
+    border-bottom: 1px solid silver;
+    margin-top: 10px;
+}
+.letter_content_type{
+    margin: 0px;
+    padding: 0px;
+}
+.letter_content_type ul{
+    margin: 0px;
+    padding: 0px;}
+.letter_content_type ul .col-sm-6,.col-lg-3{
+    margin:5px 0px;
+    padding: 0px 10px 0px 0px;
+}
+
+.letter_content_type ul li{
+    list-style-type: none;
+    font-size: 16px;
+} 
+.letter_content_type ul li a{
+    color: #584f53;
+}
+
+
+/*----------------Tech Glossary ~ Sidebar---------------------*/
+.tech_sidebar_topheader{
+    color: #222;
+    font-size: 26px;
+    font-family: lato;
+}
+.fourThickLine {
+    background-color: #a80b6e;
+    display: block;
+    width: 8.0%;
+    height: 5px;
+    margin-bottom: 8px;
+}
+.tech_glossary_area_right a{
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    color: #3e332d;
+}
+.tech_glossary_area_right div:first-child ul li a{
+    color: var(--crimson);
+}
+.featured_articles_item h3 {
+    color: #222;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: "allumi-2-std", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.featured_articles_item h3 span {
+    display: block;
+    color: #666768;
+}
+
+
+/*===============================================*/
+/*========================
+           Sitemap page
+        ==========================*/
+/*================================================*/
+.sitemap_content{}
+.sitemap_content h2{
+    font-size: 32px;
+    padding-bottom: 5px;
+    color: #222;
+    font-family: lato;
+    font-weight: 100;
+    margin-top: 10px;
+}
+.sitemap_content button{
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--crimson);
+    display: flex;
+    margin-top: 10px;
+}
+.sitemap_content button a{
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--crimson);
+    display: flex;
+    margin-top: 10px;
+}
+.sitemap_content ul li{
+    font-size: 18px;
+    font-family: arial;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+.sitemap_content ul li ul li{
+    margin-bottom: 10px;
+}
+.sitemap_content ul li a{
+    color: var(--crimson);
+    opacity: .7;
+}
+.sitemap_content ul li ul li a{
+    color: var(--crimson);
+    opacity: .7;
+}
+
+
 
 /*===============================================*/
 /*========================
@@ -1900,7 +2192,7 @@ What-we-do Single Product
 
 /*-********************************-*/
 /*-********************************-*/
-/*Client Dashboard*/
+        /*Client Dashboard*/
 /*-********************************-*/
 /*-********************************-*/
 
@@ -2467,6 +2759,7 @@ What-we-do Single Product
 /*------------------------*/
 .footer_middle_wrapper {
     padding: 20px 40px;
+    margin: 0px;
     background-color: #222222;
 }
 
@@ -2604,6 +2897,9 @@ What-we-do Single Product
     padding: 0px;
     margin: 0px;
     color: var(--text-white);
+}
+.footer_bottom_list ul li label:hover {
+    color: hsla(30, 11%, 96%, .7);
 }
 
 /* 
