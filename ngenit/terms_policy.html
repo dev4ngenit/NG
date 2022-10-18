@@ -135,7 +135,7 @@
         <div class="footer_middle">
             <div class="row footer_middle_wrapper">
                 <!-- item -->
-                <div class="col-lg-4 col-md-12 col-sm-12 footer_item_wrapper">
+                <div class="col-lg-4 col-md-8 col-sm-12 footer_item_wrapper">
                     <!-- title -->
                     <h6>Newsletter</h6>
                     <!-- text -->
@@ -150,7 +150,7 @@
                 </div>
 
                 <!-- item -->
-                <div class="col-lg-2 col-md-6 col-sm-12 footer_item_wrapper">
+                <div class="col-lg-2 col-md-4 col-sm-6 footer_item_wrapper">
                     <!-- title -->
                     <h6>About NgenIt</h6>
                     <!-- nav list -->
@@ -165,7 +165,7 @@
                 </div>
 
                 <!-- item -->
-                <div class="col-lg-2 col-md-6 col-sm-12 footer_item_wrapper">
+                <div class="col-lg-2 col-md-4 col-sm-6 footer_item_wrapper">
                     <!-- title -->
                     <h6 class="main_footer_item_title">Products & Services</h6>
                     <!-- nav list -->
@@ -181,7 +181,7 @@
                 </div>
 
                 <!-- item -->
-                <div class="col-lg-2 col-md-6 col-sm-12 footer_item_wrapper">
+                <div class="col-lg-2 col-md-4 col-sm-6 footer_item_wrapper">
                     <!-- title -->
                     <h6 class="main_footer_item_title">Features & Knowledge </h6>
                     <!-- nav list -->
@@ -193,7 +193,7 @@
                 </div>
 
                 <!-- item -->
-                <div class="col-lg-2 col-md-6 col-sm-12 footer_item_wrapper">
+                <div class="col-lg-2 col-md-4 col-sm-6 footer_item_wrapper">
                     <!-- title -->
                     <h6 class="main_footer_item_title">Help And Support</h6>
                     <!-- nav list -->
@@ -257,7 +257,7 @@
                 <h2 class="align-middle">Privacy Preference Center</h2>
             </div>
             <!--------Cookies Tab content-------->
-            <div id="Cookies" class="tab_cookises_wrapper" >
+            <div id="Cookies" class="tab_cookises_wrapper">
                 <div class="tab_cookises_settings">
                     <button class="tablinks" onclick="openCity(event, 'Privacy')" id="defaultOpen">Your privacy</button>
                     <button class="tablinks" onclick="openCity(event, 'Strictly')">Strictly necessary cookies</button>
@@ -327,12 +327,239 @@
             </div>
             <!--------Cookies Details----------->
             <div id="Cookies_details" class="Cookies_details_wrapper">
-                <div class="cookie_list_filter">
-                    <label onclick="switchVisible();" value="Click" ><i class="fa-solid fa-angle-left fa-xl"></i></label>
-                    <h5>Cookie List</h5>
-                    <input type="search">
-                    <button><i class="fa-solid fa-filter fa-xl"></i></button>
+                <div class="cookie_list_filter row d-flex">
+                    <div class="col-4 d-flex">
+                        <label onclick="switchVisible();" value="Click" ><i class="fa-solid fa-angle-left fa-xl"></i></label>
+                        <h5>Cookie List</h5>
+                    </div>
+                    <div class="col-8 d-flex justify-content-end">
+                        <form class="cookies_search_btn d-flex" action="">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                        <button class="cookie_filter_icon"><i class="fa-solid fa-filter fa-xl"></i></button>
+                    </div>     
                 </div>
+                <div class="cookie_list_content">
+                    <div class="cookie_list_content_item">
+                        <!--====///First///====-->
+                        <button class="collapsible">First party cookies</button>
+                        <div class="content">
+                            <!--Item-->
+                            <ul>
+                                <li>
+                                    <div class="cookie_veiw_name">Name</div>
+                                    <div class="cookie_veiw_title">trwv.vc</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Host</div>
+                                    <div class="cookie_veiw_title">ngenit.com</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Duration</div>
+                                    <div class="cookie_veiw_title">A few seconds</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Type</div>
+                                    <div class="cookie_veiw_title">First Party</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Category</div>
+                                    <div class="cookie_veiw_title">Targeting cookies</div>
+                                </li>
+                            </ul>
+
+                            <!--Item-->
+                            <ul>
+                                <li>
+                                    <div class="cookie_veiw_name">Name</div>
+                                    <div class="cookie_veiw_title">trwv.vc</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Host</div>
+                                    <div class="cookie_veiw_title">ngenit.com</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Duration</div>
+                                    <div class="cookie_veiw_title">A few seconds</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Type</div>
+                                    <div class="cookie_veiw_title">First Party</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Category</div>
+                                    <div class="cookie_veiw_title">Targeting cookies</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Description</div>
+                                    <div class="cookie_veiw_title">Marketo - These cookies store the total number of visits each visitor has to the Site, track email recipient behavior to measure campaign effectiveness and personalize Site content based on information known about the visitor.</div>
+                                </li>
+                            </ul>
+                            <!--Item-->
+                            <ul>
+                                <li>
+                                    <div class="cookie_veiw_name">Name</div>
+                                    <div class="cookie_veiw_title">trwv.vc</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Host</div>
+                                    <div class="cookie_veiw_title">ngenit.com</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Duration</div>
+                                    <div class="cookie_veiw_title">A few seconds</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Type</div>
+                                    <div class="cookie_veiw_title">First Party</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Category</div>
+                                    <div class="cookie_veiw_title">Targeting cookies</div>
+                                </li>
+                            </ul>
+
+                            <!--Item-->
+                            <ul>
+                                <li>
+                                    <div class="cookie_veiw_name">Name</div>
+                                    <div class="cookie_veiw_title">trwv.vc</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Host</div>
+                                    <div class="cookie_veiw_title">ngenit.com</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Duration</div>
+                                    <div class="cookie_veiw_title">A few seconds</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Type</div>
+                                    <div class="cookie_veiw_title">First Party</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Category</div>
+                                    <div class="cookie_veiw_title">Targeting cookies</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Description</div>
+                                    <div class="cookie_veiw_title">Marketo - These cookies store the total number of visits each visitor has to the Site, track email recipient behavior to measure campaign effectiveness and personalize Site content based on information known about the visitor.</div>
+                                </li>
+                            </ul>
+                        </div><br>
+
+                        <!--====///First///====-->
+                        <button class="collapsible">exchange.mediavine.com</button>
+                        <div class="content">
+                            <!--Item-->
+                            <ul>
+                                <li>
+                                    <div class="cookie_veiw_name">Name</div>
+                                    <div class="cookie_veiw_title">trwv.vc</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Host</div>
+                                    <div class="cookie_veiw_title">ngenit.com</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Duration</div>
+                                    <div class="cookie_veiw_title">A few seconds</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Type</div>
+                                    <div class="cookie_veiw_title">First Party</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Category</div>
+                                    <div class="cookie_veiw_title">Targeting cookies</div>
+                                </li>
+                            </ul>
+
+                            <!--Item-->
+                            <ul>
+                                <li>
+                                    <div class="cookie_veiw_name">Name</div>
+                                    <div class="cookie_veiw_title">trwv.vc</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Host</div>
+                                    <div class="cookie_veiw_title">ngenit.com</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Duration</div>
+                                    <div class="cookie_veiw_title">A few seconds</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Type</div>
+                                    <div class="cookie_veiw_title">First Party</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Category</div>
+                                    <div class="cookie_veiw_title">Targeting cookies</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Description</div>
+                                    <div class="cookie_veiw_title">Marketo - These cookies store the total number of visits each visitor has to the Site, track email recipient behavior to measure campaign effectiveness and personalize Site content based on information known about the visitor.</div>
+                                </li>
+                            </ul>
+                            <!--Item-->
+                            <ul>
+                                <li>
+                                    <div class="cookie_veiw_name">Name</div>
+                                    <div class="cookie_veiw_title">trwv.vc</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Host</div>
+                                    <div class="cookie_veiw_title">ngenit.com</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Duration</div>
+                                    <div class="cookie_veiw_title">A few seconds</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Type</div>
+                                    <div class="cookie_veiw_title">First Party</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Category</div>
+                                    <div class="cookie_veiw_title">Targeting cookies</div>
+                                </li>
+                            </ul>
+
+                            <!--Item-->
+                            <ul>
+                                <li>
+                                    <div class="cookie_veiw_name">Name</div>
+                                    <div class="cookie_veiw_title">trwv.vc</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Host</div>
+                                    <div class="cookie_veiw_title">ngenit.com</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Duration</div>
+                                    <div class="cookie_veiw_title">A few seconds</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Type</div>
+                                    <div class="cookie_veiw_title">First Party</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Category</div>
+                                    <div class="cookie_veiw_title">Targeting cookies</div>
+                                </li>
+                                <li>
+                                    <div class="cookie_veiw_name">Description</div>
+                                    <div class="cookie_veiw_title">Marketo - These cookies store the total number of visits each visitor has to the Site, track email recipient behavior to measure campaign effectiveness and personalize Site content based on information known about the visitor.</div>
+                                </li>
+                            </ul>
+                        </div><br>
+
+                    </div>
+                    
+                    
+                </div>            
             </div>
             <div class="modal_footer_cookises">
                 <div class="d-flex justify-content-between">
