@@ -1,0 +1,198 @@
+.header_top_menu_wrapper{}
+.header_top_menu {}
+.header_top_menu ul{
+    display: flex;
+    justify-content: end;
+}
+.header_top_menu ul li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+.header_top_menu ul li a span{
+    
+}
+
+.header_top_menu ul li a{
+    text-decoration: none;
+    color: #5f5753;
+    position: relative;
+}
+.header_top_menu ul li a{
+
+}
+.header_top_menu ul li a .fa-sort-down{
+    position: absolute;
+    top:0;
+    margin-left: 3px;
+}
+
+/*----------Middle Main loog-------------*/
+.header_middle_menu_wrapper .header_logo img{
+  width:95px;
+  vertical-align: middle;
+  margin-left: 15px;
+  display: table-cell;
+}
+
+/*----------Middle Menu Search----------*/
+.header_middle_menu{
+  position: relative;
+}
+.header_middle_search{
+  position: relative;
+}
+.header_middle_search input[type=search]{
+  margin: 10px 15px 0px 0px;
+  padding: 5px 10px;
+  background: #f7f6f5;
+  border: none;
+  border-top: 1px solid #dad9d8;
+  border-left: 1px solid #dad9d8;
+  border-bottom: 1px solid #dad9d8;
+  font-size: 14px;
+  width: 220px;
+}
+.header_middle_search input:focus[type=search]{
+  outline: none;
+  background: #f7f6f5;
+  width: 350%;
+  position: absolute;
+  top: 0;
+  right: 36px;
+  padding: 6.5px;
+}
+.header_middle_search input::placeholder {
+  color: #5f5753;
+}
+.header_middle_search button{
+  margin: 10px 15px 0px -15px;
+  padding: 5px 10px;
+  background: #f7f6f5;
+  outline: none;
+  border: none;
+  border-top: 1px solid #dad9d8;
+  border-right: 1px solid #dad9d8;
+  border-bottom: 1px solid #dad9d8;
+  color: #5f5753;
+}
+
+
+/*===========Middle Main Manu=========*/
+.header_middle_menu_wrapper{
+  position: relative;
+}
+.clicky-menu ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  visibility: hidden;
+}
+
+/*-------Script Style---------*/
+.clicky-menu.no-js li:hover > ul {
+  visibility: visible;
+}
+.clicky-menu.no-js li:focus-within > ul {
+  visibility: visible;
+}
+/*Open/Close Menu Behavior with JS*/
+.clicky-menu ul[aria-hidden=false] {
+  visibility: visible;
+  position: absolute;
+  top:60px;
+  left: 0;
+  background-color: silver;
+  border-top: 5px solid #ae0a46;
+}
+/*----------End------------*/
+
+/* Submenu Styles */
+.clicky-menu ul {
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+  background-color: #eee;
+  position: absolute;
+  width: 100%;
+  transition: .4s;
+}
+
+
+/* General Link & Button Styles */
+.clicky-menu a,
+.clicky-menu button {
+  
+}
+.clicky-menu a:hover,
+.clicky-menu button:hover {
+  background: #fff;
+  border-bottom: 5px solid #ae0a46;
+}
+.clicky-menu a:focus,
+.clicky-menu button:focus {
+  /* outline: 0.125em dotted purple; */
+  outline: none;
+  outline-offset: -0.125em;
+}
+
+
+
+
+/* Top Level Items */
+.clicky-menu > li {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+}
+
+.clicky-menu > li > a,
+.clicky-menu > li > button {
+  flex: 1 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  font-weight: 500;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.5;
+  cursor: pointer;
+
+  margin: 0.25em;
+  padding: 1em;
+  background: transparent;
+  color: #222;
+  border: 0;
+  border-bottom: 5px solid #fff;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+
+
+/* Button Hover Design */
+
+/* Button Hover Design */
+
+
+/* Submenu Links */
+.clicky-menu ul a {
+  display: block;
+  padding-top: 0.375em;
+  padding-bottom: 0.375em;
+}
+
+@media (min-width: 540px) {
+  .clicky-menu {
+    display: flex;
+  }
+  .clicky-menu > li > a,
+  .clicky-menu > li > button {
+    justify-content: center;
+  }
+  .clicky-menu ul a {
+    padding: 0.375em 1em;
+    white-space: nowrap;
+  }
+}
