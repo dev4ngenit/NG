@@ -105,6 +105,75 @@ a:hover {
 
 
 /*===============================================*/
+/*============================
+           User Dashboard Master
+        ==========================*/
+/*================================================*/
+
+/*Sidebar & Button Setting*/
+.user_dashboard_sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .user_dashboard_sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .user_dashboard_sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebarButtonStyle {
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50%;
+    left: 0;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  
+  .sidebarButtonStyle:hover {
+    background-color: #444;
+  }
+  
+  #Content_Wrapper{
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    
+  }
+  /*---End----*/
+
+/*===============================================*/
+/*============================
+           User Dashboard Home Page
+        ==========================*/
+/*================================================*/
+
+
+
+/*===============================================*/
 /*========================
            Support assistance Page
         ==========================*/
@@ -3044,11 +3113,11 @@ switch input:checked+.slider {
 
 
 
-/*-********************************-*/
-/*-********************************-*/
-/*Client Dashboard*/
-/*-********************************-*/
-/*-********************************-*/
+/*-******************************-*/
+    /*-******************
+        Client Dashboard
+        ****************-*/
+/*-******************************-*/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
@@ -3073,6 +3142,8 @@ switch input:checked+.slider {
 }
 
 /*-----End-----*/
+
+
 
 /*=====================================
     Client Dahboard -- Profile
