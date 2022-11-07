@@ -102,8 +102,121 @@ a:hover {
 }
 
 /*-----End-----*/
-#refurbished{
-    transition: .4s;
+
+
+/*===============================================*/
+/*========================
+           Support assistance Page
+        ==========================*/
+/*================================================*/
+
+.support_assistance_header {
+    background-image: url("../images/buy-category-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0px;
+}
+.support_assistance_header span {
+    text-align: center;
+    font-size: 20px;
+    line-height: 44px;
+    color: #fff;
+    padding: 0px 20px;
+    background-color: var(--crimson);
+    border-radius: 50px;
+    font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.support_assistance_header h1 {
+    text-align: center;
+    font-family: lato;
+    color: white;
+    font-size: 56px;
+    font-weight: 100;
+}
+
+/*---------------------*/
+.support_assistance_wrapper{
+    margin-top: 60px;
+}
+.support_assistance_content p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #4a4949;
+    margin-bottom: 40px;
+}
+
+.support_assistance_content h3{
+    font-size: 36px;
+    font-family: lato;
+    font-weight: 100;
+    color: #312b2d;
+    margin-bottom: 20px;
+}
+.support_assistance_content a{
+    color: var(--crimson);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+.support_assistance_content a:hover{
+    color: var(--dark-crimson);
+}
+.support_assistance_content span{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #4a4949;
+}
+.support_assistance_content img{
+    margin-top: 50px;
+}
+
+.contact_hline_call {
+    overflow :hidden;
+    color: gray;
+    text-align: left;
+    line-height: 1.6em;
+  }
+  
+  .contact_hline_call:before {
+    display: block;
+    float: right;
+    margin-top: .8em; /* half the line-height */
+    border-top: 2px solid silver;
+    width: 70%;
+    content: "";
+  }
+  
+.contact_hline_email {
+    overflow :hidden;
+    color: gray;
+    text-align: left;
+    line-height: 1.6em;
+  }
+  .contact_hline_email:before {
+    display: block;
+    float: right;
+    margin-top: .8em; /* half the line-height */
+    border-top: 2px solid silver;
+    width: 60%;
+    content: "";
+  }
+
+/*-------------*/
+.support_assistance_contact_us{
+    background: #f7f6f5;
+    padding: 20px 30px;
+}
+.support_assistance_contact_us h4{
+    font-size: 36px;
+    color: #312b2d;
+    margin-bottom: 20px;
+    font-family: lato;
+}
+.support_assistance_contact_us label{
+    font-weight: bold;
 }
 /*===============================================*/
 /*========================
@@ -116,24 +229,104 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px 0px;
+    padding: 150px 0px;
 }
 
 .account_benefits_header h1 {
     text-align: center;
     font-family: lato;
     color: white;
-    font-size: 60px;
+    font-size: 56px;
     font-weight: 100;
 }
 
 .account_benefits_header h3 {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 44px;
     color: rgb(255, 252, 252);
-    padding: 0% 10%;
+    padding: 0px 15%;
     font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+/*-----------*/
+.challenges_face_title{
+    margin: 50px;
+}
+.challenges_face_title h3{
+    text-align: center;
+    font-family: lato;
+    font-size: 32px;
+    color: #3e332d;
+    font-weight: 100;
+}
+.challenges_face_title p{
+    text-align: center;
+    font-size: 16px;
+    color: #3e332d;
+}
+.challenges_face_icon img{
+    height: 100px;
+}
+.challenges_face_icon a {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #222;
+    font-family: "allumi-2-std", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    /*display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;*/
+}
+.challenges_face_icon a:hover {
+    color: #ae0a46;
+}
+
+/*------------*/
+.account_benefits_section_wp{
+    background: #f7f6f5;
+    padding: 60px 0px;
+    color: #3e332d;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
+.account_benefits_section_bg{
+    padding: 60px 0px;
+    color: #3e332d;
+}
+.account_benefits_section_wp a{
+    color: var(--dark-crimson);
+}
+.account_benefits_section_wp a:hover{
+    color: var(--dark-crimson);
+}
+.account_benefits_section_bg a{
+    color: var(--dark-crimson);
+}
+.account_benefits_section_wp a:hover{
+    color: var(--dark-crimson);
+}
+.account_benefits_section{
+    padding-right: 20px;
+}
+.account_benefits_section h3{
+    font-family: lato;
+    font-size: 32px;
+    color: #3e332d;
+    font-weight: 100;
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver;
+}
+.account_benefits_section p{
+    font-size: 16px;
+}
+.account_benefits_section a{
+    color: var(--crimson);
+}
+.account_benefits_section a:hover{
+    color: var(--dark-crimson);
 }
 /*===================================*/
 /*====================
