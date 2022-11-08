@@ -1,3 +1,34 @@
+/*================///User Dashboar Sidebar page ///==============*/
+var lastState = false;
+
+function userDashboardSidebarClicked() {
+    if (lastState) {
+        //open
+        lastState = false
+        document.getElementById("mySidebar").style.width = "320px";
+        document.getElementById("Content_Wrapper").style.marginLeft = "320px";
+        document.getElementById("userSideButton_wrapper").style.display = "none";
+    } else {
+        //close
+        lastState = true
+        document.getElementById("mySidebar").style.width = "0px";
+        document.getElementById("Content_Wrapper").style.marginLeft = "0px";
+        document.getElementById("userSideButton_wrapper").style.display = "block";
+    }
+}
+//---------Sidebar list Show Hide----------
+$(document).ready(function () {
+    $(".accordion-heading").click(function () {
+        if ($(".accordion-body").is(':visible')) {
+            $(".accordion-body").slideUp(600);
+            $(".plusminus").text('+')
+        }
+        else {
+            $(this).next(".accordion-body").slideDown(600);
+            $(this).children(".plusminus").text('-');
+        }
+    });
+});
 /*================///Feedback page ///==============*/
 //feedback open or close
 var lastState = false;

@@ -30,16 +30,13 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
-
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
-
 ::-webkit-scrollbar-thumb {
     background: var(--crimson);
     border-radius: 10px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
 
     background: var(--dark-crimson);
@@ -47,9 +44,7 @@
 
 a {
     text-decoration: none;
-}
-
-a:hover {
+}a:hover {
     text-decoration: none;
 }
 
@@ -104,80 +99,19 @@ a:hover {
 /*-----End-----*/
 
 
-/*===============================================*/
+/*=============================================*/
 /*============================
-           User Dashboard Master
+            Job Circular Page
         ==========================*/
-/*================================================*/
-
-/*Sidebar & Button Setting*/
-.user_dashboard_sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .user_dashboard_sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .user_dashboard_sidebar a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidebarButtonStyle {
-    font-size: 20px;
-    cursor: pointer;
-    position: fixed;
-    bottom: 50%;
-    left: 0;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    z-index: 1;
-    transition: 0.5s;
-  }
-  
-  .sidebarButtonStyle:hover {
-    background-color: #444;
-  }
-  
-  #Content_Wrapper{
-    transition: margin-left .5s;
-    padding: 16px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    
-  }
-  /*---End----*/
-
-/*===============================================*/
-/*============================
-           User Dashboard Home Page
-        ==========================*/
-/*================================================*/
+/*==============================================*/
 
 
 
-/*===============================================*/
+/*============================================*/
 /*========================
            Support assistance Page
         ==========================*/
-/*================================================*/
+/*=============================================*/
 
 .support_assistance_header {
     background-image: url("../images/buy-category-hero.jpg");
@@ -1606,8 +1540,8 @@ switch input:checked+.slider {
             Web accessibility page
         ==========================*/
 /*================================================*/
-/*---------Web accessibility-Content------*/
 
+/*Web accessibility-Content*/
 .header_title_privacy_policy {
     padding: 20px;
     background: linear-gradient(to right, #ae0a46 0%, #a80b6e 51%, #582873 100%);
@@ -3113,14 +3047,11 @@ switch input:checked+.slider {
 
 
 
-/*-******************************-*/
-    /*-******************
-        Client Dashboard
-        ****************-*/
-/*-******************************-*/
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
+/*=======================================*/
+/*============================
+           User Dashboard Master
+        ==========================*/
+/*=======================================*/
 
 /*common button*/
 .common_button_dashboard {
@@ -3140,13 +3071,65 @@ switch input:checked+.slider {
     color: white;
     transition: .3s;
 }
-
 /*-----End-----*/
 
 
 
+/*Sidebar & Content Show hide Setting*/
+.content_wrapper{
+    position: relative;
+}
+#mySidebar {
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #5f5753;
+    overflow-x: hidden;
+    transition: 0.2s;
+    width: 320px;
+}
+#Content_Wrapper{
+    transition:.2s;
+    padding: 10px 0px 20px 20px;
+    background:#dfdfdd;
+    margin-left:320px
+}
+#userSideButton_wrapper{
+    background: #d6d1ca;
+    display: none;
+}
+
+/*---------------------*/
+.sidebarButtonStyle {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #c0b7ae;
+    color: #222;
+    padding: 10px 15px;
+    border: none;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  
+.sidebarButtonStyle:focus{
+    border: none;
+    outline: none;
+}
+.sidebarButtonStyle:hover {
+    background-color: #8d867f;
+}
+  
+
+@media screen and (max-height: 450px) {
+    
+}
+/*---End----*/
+
+
 /*=====================================
-    Client Dahboard -- Profile
+    User Dahboard -- Profile Page
 ======================================*/
 .client_db_profile_header {
     margin: 0px;
@@ -3214,7 +3197,7 @@ switch input:checked+.slider {
 }
 
 /*=====================================
-    Client Dahboard -- Personal Product
+    User Dahboard -- Add Product Page
 ======================================*/
 .client_dashboard_personal_product_list h2 {
     font-family: lato;
@@ -3276,7 +3259,7 @@ switch input:checked+.slider {
 }
 
 /*=====================================
-    Client Dahboard Content-resources
+    User Dahboard -- Content-resources
 ======================================*/
 .header_title_content_resources {
     background-image: url("../images/desktop-shop-hero.jpg");
@@ -3369,9 +3352,9 @@ switch input:checked+.slider {
     margin-top: 60px;
 }
 
-/*====================================
-    Order Track Page--cliden Dashboard 
-=======================================*/
+/*======================================
+    User Dashboard -- Order Track Page 
+=========================================*/
 
 /*order track*/
 .search_order_tracking form {
@@ -3509,7 +3492,7 @@ switch input:checked+.slider {
 
 
 /*=============================
-    Client Dashboard Home page
+    User Dashboard -- Home page
 ===============================*/
 #wrapper {
     background: #dfdfdd;
@@ -3537,21 +3520,21 @@ switch input:checked+.slider {
     background-color: #5f5753;
 }
 
-.sidebar-manu {
+.user_dashboard_sidebar_title {
     background-color: white;
-    padding: 20px;
+    padding: 15px;
 }
 
-.sidebar-manu h2 {
-    font-size: 32px;
+.user_dashboard_sidebar_title h2 {
+    font-size: 28px;
     line-height: 44px;
     color: rgb(66, 65, 65);
     font-family: lato;
     font-weight: 100;
 }
 
-.sidebar-manu p {
-    font-size: 16px;
+.user_dashboard_sidebar_title p {
+    font-size: 13px;
     color: rgb(66, 65, 65);
     font-family: lato;
 }
@@ -3568,19 +3551,19 @@ switch input:checked+.slider {
     color: white;
 }
 
-.sidebar-nav {
+.user_dashboard_sidebar_nav {
     display: block;
     color: white;
 }
 
-.sidebar-nav p {
+.user_dashboard_sidebar_nav p {
     padding: 20px 0px;
     padding-left: 20px;
     margin: 0;
     cursor: pointer;
 }
 
-.sidebar-nav p:hover {
+.user_dashboard_sidebar_nav p:hover {
     padding: 20px 0px;
     padding-left: 20px;
     background-color: #312b2d;
@@ -3588,14 +3571,14 @@ switch input:checked+.slider {
     ;
 }
 
-.sidebar-nav a {
+.user_dashboard_sidebar_nav a {
     display: block;
     color: white;
     padding: 20px 0px;
     padding-left: 20px;
 }
 
-.sidebar-nav a:hover {
+.user_dashboard_sidebar_nav a:hover {
     background-color: #312b2d;
     display: block;
     color: white;
@@ -3619,14 +3602,16 @@ switch input:checked+.slider {
     transition: .3s;
 }
 
+
+
 /*---Content----*/
-#client_dashboard_content_wp {
-    background-color: white;
-    padding: 25px;
+.client_dashboard_content_wp {
+    padding: 20px;
+    background:#fff;
 }
 
 .client_dashboard_welcome_section {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .client_dashboard_welcome_section h2 {
