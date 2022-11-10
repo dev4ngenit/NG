@@ -29,7 +29,7 @@
 </head>
 <body>
     <header>
-        <section class="header_top_menu_wrapper">
+        <!-- <section class="header_top_menu_wrapper">
             <div class="header_top_menu">
                 <ul>
                     <li><a href="">Login</a></li>
@@ -39,100 +39,91 @@
                     <li><a href=""><i class="fa-solid fa-cart-plus"></i><span>1</span></a></li>
                 </ul>
             </div>
-        </section>
+        </section> -->
+
         <!--Main Header-->
-        <section class="header_middle_menu_wrapper ">
-            <div class="header_middle_menu m-0 d-flex justify-content-between">
-                <div class="float-left">
+        <section class="header_bottom_wrapper ">
+            <div class="nav_menu_wrapper">
+                <div class="mobile_view_wrapper">
+                    <!--Logo-->
                     <div class="header_logo">
                         <img src="images/ngenit.png" alt="">
                     </div>
+                    <!--Menu icon-->
+                    <div class="mobile_nav_menu">
+                        <div class="menu_icon">
+                            <a href=""><i class="fa-solid fa-user"></i><span class="ipads_menu">Account</span></a>
+                            <a href=""><i class="fa-solid fa-cart-plus"></i><span class="ipads_menu">Cart</span></a>
+                            <a href=""><i class="fa-solid fa-magnifying-glass"></i><span class="ipads_menu">Search</span></a>
+                            <a style="cursor: pointer;" onclick="switchMenuVisible();" value="Click"><i class="fa-solid fa-bars"></i><span class="ipads_menu">Menu</span></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="float-left">
-                    <nav class="header_main_menu">
-                        <ul class="clicky-menu">
-                            <li><a href="#"> What we do</a>
-                                <!--Sub menu-->
-                                <ul class="row m-0">
-                                    <div class="sub_menu d-flex p-4">
-                                        <li class="col-3">
-                                            <h3>Products</h3>
-                                            <p>Harness the power of technology to achieve your most ambitious goals.</p>
-                                            <a href="">Software</a>
-                                            <a href="">Hardware</a>
-                                            <a href="">View All Products</a> 
-                                        </li>
-                                        <li class="col-3">
-                                            <h3>Solutions</h3>
-                                            <p>Our deep expertise and end-to-end capabilities help you navigate complex IT challenges.</p>
-                                            <a href="">HealthCare</a>
-                                            <a href="">Technology</a>
-                                            <a href="">View All Solutions</a> 
-                                        </li>
-                                        <li class="col-3">
-                                            <h3>Industry</h3>
-                                            <p>Our service offerings — spanning cloud, collaboration and more — drive new business outcomes.</p>
-                                            <a href="">Technology</a>
-                                            <a href="">HealthCare</a>
-                                            <a href="">View All Products</a> 
-                                        </li>
-                                        <li class="col-3">
-                                            <h3>Services</h3>
-                                            <p>Our service offerings — spanning cloud, collaboration and more — drive new business outcomes.</p>
-                                            <a href="">Consulting services</a>
-                                            <a href="">Managed services</a>
-                                            <a href="">View All Products</a> 
-                                        </li>
-                                    </div>
 
-                                    
-                                </ul>
-                            </li>
-                            <li><a href="#">Client Stories</a>
-                                <!--Sub menu-->
-                                <ul class="row m-0">
-                                    <div class="sub_menu d-flex p-4">
-                                        <li class="col-3">
-                                            <h3>Products</h3>
-                                            <p>Harness the power of technology to achieve your most ambitious goals.</p>
+                <!--Menu-->
+                <nav class="main_menu " id="Main_menu">
+                    <ul class="clicky-menu">
+                        <li><a href="#"> What we do <i class="fa-solid fa-caret-down"></i></a>
+                            <!--Sub menu-->
+                            <ul class="row m-0">
+                                <li class="">
+                                        <a onclick="hide()"><span class="fa-solid fa-xmark"></span> Close</a>
+                                    </li>
+                                <div class="sub_menu" id="closeDiv">
+                                    <li class="col-3">
+                                        <h3 onclick="subSubMenuVisible();" value="Click">Products</h3>
+                                        <p>Harness the power of technology to achieve your most ambitious goals.</p>
+                                        <div class="sub_sub_menu_hide" id="SubSub_Menu">
                                             <a href="">Software</a>
                                             <a href="">Hardware</a>
                                             <a href="">View All Products</a> 
-                                        </li>
-                                        <li class="col-3">
-                                            <h3>Solutions</h3>
-                                            <p>Our deep expertise and end-to-end capabilities help you navigate complex IT challenges.</p>
+                                        </div>
+                                        
+                                    </li>
+                                    <li class="col-3">
+                                        <h3 onclick="subSubMenuVisible();" value="Click">Solutions</h3>
+                                        <p>Our deep expertise and end-to-end capabilities help you navigate complex IT challenges.</p>
+                                        <div class="sub_sub_menu_hide" id="SubSub_Menu">
                                             <a href="">HealthCare</a>
                                             <a href="">Technology</a>
                                             <a href="">View All Solutions</a> 
-                                        </li>
-                                        <li class="col-3">
-                                            <h3>Industry</h3>
-                                            <p>Our service offerings — spanning cloud, collaboration and more — drive new business outcomes.</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-3">
+                                        <h3 onclick="subSubMenuVisible();" value="Click">Industry</h3>
+                                        <p>Our service offerings service offerings </p>
+                                        <div class="sub_sub_menu_hide" id="SubSub_Menu">
                                             <a href="">Technology</a>
                                             <a href="">HealthCare</a>
                                             <a href="">View All Products</a> 
-                                        </li>
-                                        <li class="col-3">
-                                            <h3>Services</h3>
-                                            <p>Our service offerings — spanning cloud, collaboration and more — drive new business outcomes.</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-3">
+                                        <h3 onclick="subSubMenuVisible();" value="Click">Services</h3>
+                                        <p>Our service offerings drive new business outcomes.</p>
+                                        <div class="sub_sub_menu_hide" id="SubSub_Menu">
                                             <a href="">Consulting services</a>
                                             <a href="">Managed services</a>
                                             <a href="">View All Products</a> 
-                                        </li>
-                                    </div>
-                                </ul>
-                            </li>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li><a href="#">Client Stories <i class="fa-solid fa-caret-down"></i></a>
+                            <!--Sub menu-->
                             
-                            <li><a href="">Content & resources</a></li>
-                            <li><a href="">Contact & careers</a></li>
-                            <li><a href="">Shop</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                
-                <div class="float-right">
-                    <div class="header_middle_search d-flex justify-content-end">
+                        </li>
+                        
+                        <li><a href="">Content & resources</a></li>
+                        <li><a href="">Contact & careers</a></li>
+                        <li><a href="">Shop</a></li>
+                    </ul>
+                </nav>
+            
+                <!--Search-->
+                <div class="search_menu" style="flex: 0 0 15%">
+                    <div class="header_search">
                         <input type="search" placeholder="What can we help you find?">
                         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
@@ -149,5 +140,43 @@
 
 <!-- Clicky Menus JS -->
 <script src="js/clicky-menus.js"></script>
+<script>
+//-----Mobile Menu Show
+function switchMenuVisible() {
+    
+    var query = document.getElementById('Main_menu');
+    if (query.classList.contains('main_menu')) {
+        query.classList.remove('main_menu'); 
+        query.classList.add('show_flex'); 
+    } 
+    else{
+            query.classList.remove('show_flex'); 
+            query.classList.add('main_menu'); 
+    }
+    document.getElementById('Main_menu').style.display = 'block';
+}
+//-----Mobile Sub Sub Menu
+function subSubMenuVisible() {
+    
+    var query = document.getElementById('SubSub_Menu');
+    if (query.classList.contains('sub_sub_menu_hide')) {
+        query.classList.remove('sub_sub_menu_hide'); 
+        query.classList.add('sub_sub_menu_show'); 
+    } 
+    else{
+            query.classList.remove('sub_sub_menu_show'); 
+            query.classList.add('sub_sub_menu_hide'); 
+    }
+}
+
+//just close
+function hide()
+{
+    
+    document.getElementById('closeDiv').style.display = 'none';
+    
+};
+
+</script>
 </body>
 </html>

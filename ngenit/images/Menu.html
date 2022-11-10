@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/ngenit/menu.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+
+    <!-------cdn link------->
+    <link rel="stylesheet" href="./Menu_files/all.min.css">
+    <!--cdn alert--> 
+    <script src="./Menu_files/jquery.slim.min.js.download"></script>
+    <script src="./Menu_files/bootstrap.bundle.min.js.download"></script>
+
+    <!-- slick slider -->
+    <link rel="stylesheet" href="./Menu_files/slick.css">
+    <link rel="stylesheet" href="./Menu_files/slick-theme.css">
+
+    <!-------CSS File------->
+    <link rel="stylesheet" href="./Menu_files/bootstrap.css">
+    <link rel="stylesheet" href="./Menu_files/font-awesome.css">
+
+  
+    <!-- Clicky Menus CSS -->
+    <link rel="stylesheet" href="./Menu_files/menu.css">
+
+    <!-- Demo CSS (No need to include it into your project) -->
+</head>
+<body>
+    <header>
+        <!-- <section class="header_top_menu_wrapper">
+            <div class="header_top_menu">
+                <ul>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Create an account</a></li>
+                    <li><a href="">Tools<i class="fa-solid fa-sort-down"></i></a></li>
+                    <li><a href="">Support<i class="fa-solid fa-sort-down"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-cart-plus"></i><span>1</span></a></li>
+                </ul>
+            </div>
+        </section> -->
+
+        <!--Main Header-->
+        <section class="header_bottom_wrapper ">
+            <div class="nav_menu_wrapper">
+                <div class="mobile_view_wrapper">
+                    <!--Logo-->
+                    <div class="header_logo">
+                        <img src="./Menu_files/ngenit.png" alt="">
+                    </div>
+                    <!--Menu icon-->
+                    <div class="mobile_nav_menu">
+                        <div class="menu_icon">
+                            <a href="http://127.0.0.1:5500/ngenit/menu.html"><i class="fa-solid fa-user"></i><span class="ipads_menu">Account</span></a>
+                            <a href="http://127.0.0.1:5500/ngenit/menu.html"><i class="fa-solid fa-cart-plus"></i><span class="ipads_menu">Cart</span></a>
+                            <a href="http://127.0.0.1:5500/ngenit/menu.html"><i class="fa-solid fa-magnifying-glass"></i><span class="ipads_menu">Search</span></a>
+                            <a style="cursor: pointer;" onclick="switchMenuVisible();" value="Click"><i class="fa-solid fa-bars"></i><span class="ipads_menu">Menu</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Menu-->
+                <nav class="show_flex" id="Main_menu">
+                    <ul class="clicky-menu">
+                        <li><button aria-controls="what-we-do-submenu" aria-expanded="true">What we do <i class="fa-solid fa-caret-down"></i></button>
+                            <!--Sub menu-->
+                            <ul class="row m-0 sub-menu--right" id="what-we-do-submenu" aria-hidden="false">
+                                <div class="sub_menu">
+                                    <li class="col-3">
+                                        <h3 onclick="subSubMenuVisible();" value="Click">Products</h3>
+                                        <p>Harness the power of technology to achieve your most ambitious goals.</p>
+                                        <div class="sub_sub_menu_hide" id="SubSub_Menu">
+                                            <a href="http://127.0.0.1:5500/ngenit/menu.html">Software</a>
+                                            <a href="http://127.0.0.1:5500/ngenit/menu.html">Hardware</a>
+                                            <a href="http://127.0.0.1:5500/ngenit/menu.html">View All Products</a> 
+                                        </div>
+                                        
+                                    </li>
+                                    <li class="col-3">
+                                        <h3 onclick="subSubMenuVisible();" value="Click">Solutions</h3>
+                                        <p>Our deep expertise and end-to-end capabilities help you navigate complex IT challenges.</p>
+                                        <div class="sub_sub_menu_hide" id="SubSub_Menu">
+                                            <a href="http://127.0.0.1:5500/ngenit/menu.html">HealthCare</a>
+                                            <a href="http://127.0.0.1:5500/ngenit/menu.html">Technology</a>
+                                            <a href="http://127.0.0.1:5500/ngenit/menu.html">View All Solutions</a> 
+                                        </div>
+                                    </li>
+                                    <li class="col-3">
+                                        <h3 onclick="subSubMenuVisible();" value="Click">Industry</h3>
+                                        <p>Our service offerings — spanning cloud, collaboration and more — drive new business outcomes.</p>
+                                        <div class="sub_sub_menu_hide" id="SubSub_Menu">
+                                            <a href="http://127.0.0.1:5500/ngenit/menu.html">Technology</a>
+                                            <a href="http://127.0.0.1:5500/ngenit/menu.html">HealthCare</a>
+                                            <a href="http://127.0.0.1:5500/ngenit/menu.html">View All Products</a> 
+                                        </div>
+                                    </li>
+                                    <li class="col-3">
+                                        <h3 onclick="subSubMenuVisible();" value="Click">Services</h3>
+                                        <p>Our service offerings — spanning cloud, collaboration and more — drive new business outcomes.</p>
+                                        <div class="sub_sub_menu_hide" id="SubSub_Menu">
+                                            <a href="http://127.0.0.1:5500/ngenit/menu.html">Consulting services</a>
+                                            <a href="http://127.0.0.1:5500/ngenit/menu.html">Managed services</a>
+                                            <a href="http://127.0.0.1:5500/ngenit/menu.html">View All Products</a> 
+                                        </div>
+                                    </li>
+                                </div>      
+                            </ul>
+                        </li>
+                        <li><a href="http://127.0.0.1:5500/ngenit/menu.html#">Client Stories <i class="fa-solid fa-caret-down"></i></a>
+                            <!--Sub menu-->
+                            
+                        </li>
+                        
+                        <li><a href="http://127.0.0.1:5500/ngenit/menu.html">Content &amp; resources</a></li>
+                        <li><a href="http://127.0.0.1:5500/ngenit/menu.html">Contact &amp; careers</a></li>
+                        <li><a href="http://127.0.0.1:5500/ngenit/menu.html">Shop</a></li>
+                    </ul>
+                </nav>
+            
+                <!--Search-->
+                <div class="search_menu" style="flex: 0 0 15%">
+                    <div class="header_search">
+                        <input type="search" placeholder="What can we help you find?">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+    <!--==================Script=====================-->
+     <!-- jquery cdn -->
+     <script src="./Menu_files/jquery.min.js.download"></script>
+     
+
+<!-- Clicky Menus JS -->
+<script src="./Menu_files/clicky-menus.js.download"></script>
+<script>
+//-----Mobile Menu Show
+function switchMenuVisible() {
+    
+    var query = document.getElementById('Main_menu');
+    if (query.classList.contains('main_menu')) {
+        query.classList.remove('main_menu'); 
+        query.classList.add('show_flex'); 
+    } 
+    else{
+            query.classList.remove('show_flex'); 
+            query.classList.add('main_menu'); 
+    }
+}
+//-----Mobile Sub Sub Menu
+function subSubMenuVisible() {
+    
+    var query = document.getElementById('SubSub_Menu');
+    if (query.classList.contains('sub_sub_menu_hide')) {
+        query.classList.remove('sub_sub_menu_hide'); 
+        query.classList.add('sub_sub_menu_show'); 
+    } 
+    else{
+            query.classList.remove('sub_sub_menu_show'); 
+            query.classList.add('sub_sub_menu_hide'); 
+    }
+}
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

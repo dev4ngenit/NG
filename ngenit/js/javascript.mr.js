@@ -16,19 +16,6 @@ function userDashboardSidebarClicked() {
         document.getElementById("userSideButton_wrapper").style.display = "block";
     }
 }
-//---------Sidebar list Show Hide----------
-$(document).ready(function () {
-    $(".accordion-heading").click(function () {
-        if ($(".accordion-body").is(':visible')) {
-            $(".accordion-body").slideUp(600);
-            $(".plusminus").text('+')
-        }
-        else {
-            $(this).next(".accordion-body").slideDown(600);
-            $(this).children(".plusminus").text('-');
-        }
-    });
-});
 /*================///Feedback page ///==============*/
 //feedback open or close
 var lastState = false;

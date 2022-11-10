@@ -216,5 +216,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/javascript.mr.js"></script>
 
+    <script>        
+        //---------Sidebar list Show Hide----------
+        $(document).ready(function () {
+            $(".accordion-heading").click(function () {
+                if ($(".accordion-body").is(':visible')) {
+                    $(".accordion-body").slideUp(600);
+                    $(".plusminus").text('+')
+                }
+                else {
+                    $(this).next(".accordion-body").slideDown(600);
+                    $(this).children(".plusminus").text('-');
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>

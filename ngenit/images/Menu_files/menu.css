@@ -327,6 +327,7 @@
   border-top: 4px solid #ae0a46;
 }
 .clicky-menu ul {
+  position: absolute;
   top: 100%;
   left: 0;
   visibility: hidden;
@@ -336,8 +337,6 @@
   width: 100%;
   background-color: #fff;
   padding: 0px;
-  height: 100%;
-  border: none;
 }
 .sub_menu li{
   border-bottom: 0.5px solid silver;
@@ -380,9 +379,8 @@
 .clicky-menu ul[aria-hidden=false] {
   visibility: visible;
   position: absolute;
-  top:50px;
+  top:45px;
   left: 0;
-  height: 100%;
 }
 
 /* Submenu Styles */
@@ -418,8 +416,7 @@
   border: none;
 }
 .clicky-menu > li:hover{
-  border: none;
-  background-color: silver;
+  border-bottom: 4px solid #ae0a46;
 }
 /* Top Level Items */
 .clicky-menu > li {
@@ -436,7 +433,6 @@
   padding: 0px;
 }
 /*=========/// Script Show Hide///========*/
-
 .show_flex{
   display: flex;
 }

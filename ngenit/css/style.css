@@ -101,11 +101,327 @@ a {
 
 /*=============================================*/
 /*============================
-            Job Circular Page
+            Job Details Page
+        ==========================*/
+/*==============================================*/
+.job_details_content_wrapper{
+    padding-right: 30px;
+}
+.job_details_content h6{
+    color: #5C5C5C;
+    font-weight: bold;
+}
+.job_details_content p{
+    color: #5C5C5C;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.job_details_content ul{
+    color: #5C5C5C;
+    font-size: 14px;
+}
+
+.job_apply_button{
+    margin: 0 5%;
+    padding: 15px;
+    border-top: 1px dotted var(--crimson);
+    border-bottom: 1px dotted var(--crimson);
+}
+.job_apply_button a{
+    color: var(--crimson);
+}
+/*=============================================*/
+/*============================
+            Job Post Page
         ==========================*/
 /*==============================================*/
 
+/*----Header Title-------*/
+.search_job_post form {
+    width: 100%;
+    height: 44px;
+    padding-left: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
 
+.search_job_post input {
+    all: unset;
+    font: 16px system-ui;
+    color: #ae0a46;
+    background: #dfdfdd;
+    width: 80%;
+    height: auto;
+    padding: 10px 0px;
+    padding-left: 20px;
+    outline: none;
+}
+
+.search_job_post button {
+    color: #fff;
+    width: 20%;
+    padding: 10px 0px;
+    margin-left: 1%;
+    outline: none;
+    background: #ae0a46;
+    border: none;
+}
+
+.search_job_post button:hover {
+    background: #860333;
+    transition: .3s;
+}
+
+.search_job_post ::placeholder {
+    color: #ae0a46;
+}
+
+/*-------Content----------*/
+.job_post_wrapper{
+    margin: 40px;
+}
+.job_post_card {
+    transition: all linear 0.3s;
+    display: flex;
+    padding: 20px 5px;
+    border-radius: 5px;
+    border: 2px solid silver;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.job_post_card:hover {
+    transform: translateY(-8px);
+    opacity: 1;
+}
+/*--------------*/
+.job_post_card_img{
+    position: relative;
+    width: 30%;
+}
+.job_post_card_img img {
+    padding: 10px;
+    text-align: center;
+    border: 10px solid white;
+}
+
+.job_post_card_details{
+    width: 70%;
+}
+.job_post_card_details h6{
+    color: #222;
+}
+/* .job_post_card_details p{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;   
+} */
+
+.job_post_card_details ul {
+    padding: 0px;
+    margin: 0px;
+    line-height: 30px;
+    font-family: arial;
+    font-size: 14px;
+    color: #3e332d;
+    list-style-type: none;
+    
+}
+
+.job_post_card_details ul li{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.job_post_card_details ul li i{
+    margin-right: 5px;
+}
+.job_post_end_date{
+    margin: 8px 20px 0px;
+    cursor: default;
+}
+.job_post_end_date p{
+    text-align: center;
+    margin: 0px;
+    font-size: 12px;
+}
+/*--------------*/
+.job_post_btn {
+    padding: 5px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #3e332d;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #3e332d;
+}
+
+.job_post_btn:hover {
+    background-color: #3e332d;
+    color: white;
+    transition: .3s;
+}
+
+/*=============================================*/
+/*============================
+            Job Apply form Page
+        ==========================*/
+/*==============================================*/
+.apply_job_form_title {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0px;
+}
+.apply_job_form_title span {
+    text-align: center;
+    font-size: 20px;
+    line-height: 44px;
+    color: #fff;
+    padding: 0px 20px;
+    background-color: var(--crimson);
+    border-radius: 50px;
+    font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.apply_job_form_title h1 {
+    text-align: center;
+    font-family: lato;
+    color: white;
+    font-size: 56px;
+    font-weight: 100;
+}
+/*-------------------*/
+.apply_job_form_wrapper{
+    margin-top: 50px;
+}
+/*----------Text Tyoe------------*/
+.job_apply_select_option{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid silver;
+    color: rgb(125, 125, 125);
+}
+.job_apply_select_option:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--crimson);
+}
+/*----------Text Tyoe------------*/
+.job_apply_form input[type=text] {
+    color: transparent;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid silver;
+  }
+.job_apply_form input[type=text]:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--crimson);
+}
+  /*---------Email Type-------------*/
+.job_apply_form input[type=email] {
+    color: transparent;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid silver;
+  }
+.job_apply_form input[type=email]:focus {
+    border: none;
+    outline: none;
+    
+    border-bottom: 2px solid var(--crimson);
+}
+  /*---------Number Type-------------*/
+.job_apply_form input[type=number] {
+    color: transparent;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid silver;
+  }
+.job_apply_form input[type=number]:focus {
+    border: none;
+    outline: none;
+    
+    border-bottom: 2px solid var(--crimson);
+}
+  /*----------File Type------------*/
+.job_apply_form input[type=file] {
+    color: transparent;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+.job_apply_form input[type=file]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.job_apply_form input[type=file]::before {
+    content: 'Upload CV';
+    color: rgb(125, 125, 125);
+    display: inline-block;
+    border: 2px solid silver;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+    transition: .4s;
+}
+.job_apply_form input[type=file]:hover::before {
+    border: 2px solid var(--crimson);
+    color: var(--crimson);
+}
+.job_apply_form input[type=file]:active {
+    outline: 0;
+}
+.job_apply_form input[type=file]:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+.job_submit_btn{
+    margin-top: 10px;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    background-color: var(--crimson);
+    transition: .3s;
+    outline: none;
+    border: none;
+    color: white;
+}
+.job_submit_btn:hover{
+    background: var(--dark-crimson);
+}
 
 /*============================================*/
 /*========================
@@ -2905,9 +3221,6 @@ switch input:checked+.slider {
 
 /*-----------------single blog ~ content_wrapper-------------------*/
 
-.content_wrapper {
-    margin: 30px 0px;
-}
 
 .blog_text_area h2 {
     margin: 10px 0px 30px 0px;
@@ -3072,8 +3385,6 @@ switch input:checked+.slider {
     transition: .3s;
 }
 /*-----End-----*/
-
-
 
 /*Sidebar & Content Show hide Setting*/
 .content_wrapper{
@@ -3379,7 +3690,7 @@ switch input:checked+.slider {
     outline: none;
 }
 
-#form button {
+.search_order_tracking button {
     color: #fff;
     width: 20%;
     padding: 10px 0px;
@@ -3389,12 +3700,12 @@ switch input:checked+.slider {
     border: none;
 }
 
-#form button:hover {
+.search_order_tracking button:hover {
     background: #860333;
     transition: .3s;
 }
 
-#form ::placeholder {
+.search_order_tracking ::placeholder {
     color: #ae0a46;
 }
 
