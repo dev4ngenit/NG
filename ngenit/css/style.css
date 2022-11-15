@@ -1934,7 +1934,7 @@ switch input:checked+.slider {
     color: var(--dark-crimson);
 }
 
-/*----------*/
+/*-----Contect Form-----*/
 .specialist_contect_form {
     margin: 0px;
     position: relative;
@@ -2105,11 +2105,11 @@ switch input:checked+.slider {
 }
 
 
-/*=================================================*/
+/*===================================*/
 /*========================
-            Common Product page
-        ==========================*/
-/*===================================================*/
+        Common Product page
+        ==================*/
+/*==================================*/
 
 .common_product_header {
     background-image: url("../images/buy-category-hero.jpg");
@@ -2319,10 +2319,11 @@ switch input:checked+.slider {
     color: #ae0a46;
 }
 
-/*===============================================*/
- /*=========What-we-do Single Product========*/
-/*================================================*/
-
+/*===================================*/
+/*========================
+        Single Product page
+        ==================*/
+/*==================================*/
 
 /*images gallary*/
 .single_product_images {
@@ -2667,15 +2668,18 @@ switch input:checked+.slider {
 
 
 
-/*=================================================*/
-/*====================
-            What-we-do industy
-            =====================*/
-/*===================================================*/
-.top_insight_layout {
+/*================================*/
+/*=======================
+        All Solution page
+    =====================*/
+/*=================================*/
+
+
+.solution_top_layout {
     background-color: #f7f6f5;
     border-bottom: 1px solid #d4d0ca;
     padding-top: 20px;
+    padding-bottom: 20px;
     margin-bottom: 50px;
 }
 
@@ -2700,6 +2704,65 @@ switch input:checked+.slider {
     background-color: #6f0448;
     transition: 1s;
 }
+/*------Key business outcomes-----------*/
+.solution_business_titele{
+    text-align: center;
+    color: #5f5753;
+    font-family: lato;
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 60px;
+}
+.solution_business_item{
+    text-align: center;
+}
+.business_item_content a{
+    color: var(--crimson);
+}
+.business_item_content a:hover{
+    color: var(--dark-crimson);
+}
+/*---Icon slide learn more---*/
+.business_item_button:hover .business_item_button_icon{
+    transform: translateX(10px);
+}
+.business_item_button {
+    justify-content: center;
+    color: var(--mainColor);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.business_item_button:hover{
+    color: var(--mainColor);
+}
+
+.business_item_button_icon{
+    position: relative;
+    transition: all linear 0.3s;
+}
+
+.business_item:hover .business_item_button_icon{
+    transform: translateX(10px);
+}
+
+
+.business_item_button_icon i{
+    display: flex;
+}
+/*-----------------*/
+
+.tech_solution_item{
+    padding: 20px 30px 30px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 4px 0px #e6e6e5;
+    border-radius: 10px;
+}
+/*-----------------*/
+
 
 .outcome_headline h1 {
     background-image: linear-gradient(45deg, #ae0a46, #582873);
@@ -2713,18 +2776,12 @@ switch input:checked+.slider {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .beTopLine {
     border-top: 6px solid #9f177a;
+    padding-top: 5px;
 }
-
 .beUnderLine {
     border-bottom: 6px solid #9f177a;
-}
-
-.outcomes_business_titele {
-    color: #5f5753;
-    margin-bottom: 60px;
 }
 
 .outcome_smail_bussiness_title {
@@ -2733,10 +2790,10 @@ switch input:checked+.slider {
 
 .outcome_smail_bussiness_title h2 {
     text-align: center;
-    color: #495057;
+    color: #222;
     font-family: lato;
-    font-weight: bold;
-    padding: 0px 100px;
+    font-weight: 700;
+    font-size: 42px;
 }
 
 .outcome_smail_bussiness_title .lineTop {
@@ -2755,6 +2812,53 @@ switch input:checked+.slider {
     background-color: #9f177a !important;
     border: none;
     opacity: 1;
+}
+/*-----------------*/
+.solution_number_wrapper h3{
+    color: #222;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: lato;
+    margin-bottom: 20px;
+}
+.tech_solution_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.tech_solution_item{
+    padding: 20px 30px 30px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 4px 0px #e6e6e5;
+    border-radius: 10px;
+}
+
+.tech_solution_title {
+    font-size: 3em;
+    font-family: cursive;
+    background: linear-gradient(to right, #ae0a46 0%, #a80b6e 49%, #582873 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    line-height: inherit;
+}
+
+.tech_solution_text{
+    color: #222;
+    font-family: allumi-2-std, Verdana, sans-serif;
+    font-weight: 100;
+    display: block;
+    font-size: 13px;
+    line-height: 24px !important;
+    height: 90px;
+    margin-bottom: 0;
+}
+
+.tech_solution_award{
+    font-size: 12px;
+    color: var(--navColor);
 }
 
 /*---------------*/
@@ -2807,6 +2911,90 @@ switch input:checked+.slider {
 }
 
 
+
+/*-----Contect Form-----*/
+.solution_contact_wrapper{
+    background-color: #252525;
+    padding: 80px 0px;
+}
+.thing_together_wrapper {
+    padding: 0px 40px;
+}
+.thing_together_wrapper h4{
+    color: #fff;
+    font-size: 48px;
+    font-family: lato;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.thing_together_wrapper p{
+    color: #fff;
+    font-size: 32px;
+    font-family: lato;
+    font-weight: 400;
+    margin: 40px 0px;
+}
+.thing_together_wrapper h5{
+    color: #fff;
+    font-size: 32px;
+    margin-top: 30px;
+}
+.thing_together_wrapper h5 i{
+    margin-right: 40px;
+}
+.specialist_contect_form {
+    margin: 0px;
+    position: relative;
+    margin-top: 20px;
+    padding: 40px 10px;
+    background-color: #f7f6f5;
+}
+
+.specialist_contect_form::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(90deg, #ae0a46, #a80b6e 25%, #582873 75%);
+    top: 0px;
+    left: 0px;
+}
+
+.solution_form_item_wp {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form_input {
+    color: #6e6664;
+    display: block;
+    border: none;
+    padding: 18px 0 10px;
+    width: 100%;
+    background-color: var(--bgColor);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    outline: none;
+    border-bottom: solid 1px #CBC4C3;
+}
+
+.form_label {
+    color: var(--mainColor);
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    font-size: 10px;
+    display: none;
+}
+
+.form_input:focus::placeholder {
+    color: transparent;
+}
+
+.form_input:focus~.form_label {
+    display: block;
+}
 
 /*=================================================*/
 /*================================
@@ -2925,13 +3113,13 @@ switch input:checked+.slider {
 
 
 
-/*=================================================*/
-/*====================
-            All Client Stories Page
-            =====================*/
-/*===================================================*/
+/*=========================================*/
+/*===========================
+            Solution Filter Page
+        =====================*/
+/*=======================================*/
 
-/*---------Client Stories ~ Featured------*/
+/*---------Solution filter ~ Featured------*/
 
 .featured_client_stories_wrapper {}
 
@@ -3000,7 +3188,7 @@ switch input:checked+.slider {
 
 
 
-/*--------Client Storie ~ Filter Topbar------------*/
+/*--------Solution ~ Filter Topbar------------*/
 .clinet_stories_filter_top_bar {}
 
 .clinet_stories_filter_top_bar label {
@@ -3020,7 +3208,7 @@ switch input:checked+.slider {
     font-size: 18px;
 }
 
-/*------------Client Storie ~ Sidebar---------------*/
+/*------------solution filter ~ Sidebar---------------*/
 
 .client_stories_narrow_content input {
     border: 1px solid rgb(185, 185, 185);
@@ -3051,7 +3239,7 @@ switch input:checked+.slider {
     background: #fff;
 }
 
-/*------------Client Storie ~ Content Item------------*/
+/*------------Solution Filter ~ Content Item------------*/
 
 .client_stories_content_item {
     opacity: 1;
@@ -3097,7 +3285,7 @@ switch input:checked+.slider {
     line-height: 24px;
 }
 
-/*------------Client Storie ~ Paginatiion------------*/
+/*------------Solution ~ Paginatiion------------*/
 .pagination {
     margin: 20px 0px;
 }
@@ -3127,13 +3315,13 @@ switch input:checked+.slider {
     border-color: #ae0a46;
 }
 
-/*=================================================*/
-/*====================
-                Single Blog Page
-            =====================*/
-/*===================================================*/
+/*================================*/
+/*=======================
+        Solution Blog Page
+    =====================*/
+/*=================================*/
 
-/*------------single blog ~ page (imgaes)--------------*/
+/*---------single blog ~ page (imgaes)-----------*/
 .assetType {
     text-align: center;
     margin: 20px 0px;
@@ -3156,7 +3344,6 @@ switch input:checked+.slider {
     background-color: #6f0448;
     transition: 1s;
 }
-
 
 .headline {
     margin: 20px 0px;

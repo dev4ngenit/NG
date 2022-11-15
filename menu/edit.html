@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+
+    <!-------cdn link------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-------CSS File------->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+
+  
+    <!-- Clicky Menus CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Demo CSS (No need to include it into your project) -->
+</head>
+<body>
+    <section class="header_bottom_wrapper ">
+        <div class="nav_menu_wrapper">
+            <div class="mobile_view_wrapper d-flex justify-content-between">
+                <!--Logo-->
+                <div class="header_logo">
+                    <img src="images/ngenit.png" alt="">
+                </div>
+                <!--Menu icon-->
+                <div class="mobile_nav_menu">
+                    <div class="menu_icon">
+                        <a href=""><i class="fa-solid fa-user"></i><span class="ipads_menu">Account</span></a>
+                        <a href=""><i class="fa-solid fa-cart-plus"></i><span class="ipads_menu">Cart</span></a>
+                        <a href=""><i class="fa-solid fa-magnifying-glass"></i><span class="ipads_menu">Search</span></a>
+                        <a style="cursor: pointer;" onclick="switchMenuVisible();" value="Click"><i class="fa-solid fa-bars"></i><span class="ipads_menu">Menu</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu-->
+            <nav class="main_menu" id="Main_menu">
+                <div class="menu_item_wrapper">			
+                    <div class="menu_item">			
+                        <button class="country-btn-portugal">What we do</button>     
+                        <div class="manege_nav sub_menu_wrapper mr-animate-left">
+                            <!--Sub menu-->
+                            <div class="sub_menu">
+                                <div class="col-3">
+                                    <h3>Products</h3>
+                                    <p>Harness the power of technology to achieve your most ambitious goals.</p>
+                                    <div class="sub_sub_menu_hide">
+                                        <a href="">Software</a>
+                                        <a href="">Hardware</a>
+                                        <a href="">View All Products</a> 
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <h3>Solutions</h3>
+                                    <p>Our deep expertise and end-to-end capabilities help you navigate complex IT challenges.</p>
+                                    <div class="sub_sub_menu_hide">
+                                        <a href="">HealthCare</a>
+                                        <a href="">Technology</a>
+                                        <a href="">View All Solutions</a> 
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <h3>Industry</h3>
+                                    <p>Our service offerings service offerings </p>
+                                    <div class="sub_sub_menu_hide">
+                                        <a href="">Technology</a>
+                                        <a href="">HealthCare</a>
+                                        <a href="">View All Products</a> 
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <h3 >Services</h3>
+                                    <p>Our service offerings drive new business outcomes.</p>
+                                    <div class="sub_sub_menu_hide">
+                                        <a href="">Consulting services</a>
+                                        <a href="">Managed services</a>
+                                        <a href="">View All Products</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_item">			
+                        <button class="country-btn-portugal">Client Stories</button>     
+                        <div class="manege_nav sub_menu_wrapper mr-animate-right">
+                            <a href="#">2</a>
+                            <a href="#">Overview</a>
+                            <a href="#">Application Process</a>
+                            <a href="#">Investment Options</a>
+                        </div>
+                    </div>
+                    <div class="menu_item">			
+                        <button class="country-btn-portugal">Content & resources</button>     
+                        <div class="manege_nav sub_menu_wrapper mr-animate-left">
+                            <a href="#">3</a>
+                            <a href="#">Overview</a>
+                            <a href="#">Application Process</a>
+                            <a href="#">Investment Options</a>
+                        </div>
+                    </div>
+                    <div class="menu_item">			
+                        <button class="country-btn-portugal">Contact & careers</button>     
+                        <div class="manege_nav sub_menu_wrapper mr-animate-left">
+                            <a href="#">3</a>
+                            <a href="#">Overview</a>
+                            <a href="#">Application Process</a>
+                            <a href="#">Investment Options</a>
+                        </div>
+                    </div>
+                    <div class="menu_item">			
+                        <button class="country-btn-portugal">Shop</button>     
+                        <div class="manege_nav sub_menu_wrapper mr-animate-left">
+                            <a href="#">3</a>
+                            <a href="#">Overview</a>
+                            <a href="#">Application Process</a>
+                            <a href="#">Investment Options</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        
+            <!--Search-->
+            <div class="search_menu" style="flex: 0 0 15%">
+                <div class="header_search">
+                    <input type="search" placeholder="What can we help you find?">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==================Edit=====================-->
+
+
+    
+
+
+
+
+
+<!--==================Script=====================-->
+<!-- jquery cdn -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     
+
+<!-- Clicky Menus JS -->
+<script>
+
+    //--Menu Open & hide
+    function fnClick(e){
+        var $dd = $(this).next();
+        console.log($dd, this); 
+        $('.manege_nav').not($dd).removeClass('menu_btn_active');
+        $dd.toggleClass('menu_btn_active');
+    }
+
+	//open menu
+	$('.country-btn-portugal').click(fnClick);
+	$('.country-btn-uk').click(fnClick);
+    
+	//close if menu clicked
+	$('#mclose').click(()=>{ 
+	  $('.manege_nav').removeClass('menu_btn_active');
+	});
+
+    //--Mobile Menu
+    function switchMenuVisible() {
+    
+    var query = document.getElementById('Main_menu');
+    if (query.classList.contains('main_menu')) {
+        query.classList.remove('main_menu'); 
+        query.classList.add('show_flex'); 
+    } 
+    else{
+            query.classList.remove('show_flex'); 
+            query.classList.add('main_menu'); 
+    }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+
+/*======================
+      Header Up Menu
+=========================*/
+
+/*Header Top Menu*/
+.header_top_menu_wrapper{}
+.header_top_menu {}
+.header_top_menu ul{
+    display: flex;
+    justify-content: end;
+}
+.header_top_menu ul li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+.header_top_menu ul li a span{
+    
+}
+
+.header_top_menu ul li a{
+    text-decoration: none;
+    color: #5f5753;
+    position: relative;
+}
+.header_top_menu ul li a{
+
+}
+.header_top_menu ul li a .fa-sort-down{
+    position: absolute;
+    top:0;
+    margin-left: 3px;
+}
+/*======================
+   Header Dwon Menu 
+========================*/
+
+/*=======// Header logo //=======*/
+.header_logo img{
+  width:90px;
+  vertical-align: middle;
+  margin: 5px;
+  margin-left: 15px;
+  display: table-cell;
+  position: relative;
+}
+
+
+/*======// Header Search //========*/
+
+.header_search{
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+.header_search input[type=search]{
+  margin: 10px 15px 0px 0px;
+  padding: 5px 10px;
+  background: #f7f6f5;
+  border: none;
+  border-top: 1px solid #dad9d8;
+  border-left: 1px solid #dad9d8;
+  border-bottom: 1px solid #dad9d8;
+  font-size: 14px;
+  width: 220px;
+}
+.header_search input:focus[type=search]{
+  outline: none;
+  background: #f7f6f5;
+  width: 550%;
+  position: absolute;
+  top: 0;
+  right: 36px;
+  padding: 6.5px;
+}
+.header_search input::placeholder {
+  color: #5f5753;
+}
+.header_search button{
+  margin: 10px 15px 0px -15px;
+  padding: 5px 10px;
+  background: #f7f6f5;
+  outline: none;
+  border: none;
+  border-top: 1px solid #dad9d8;
+  border-right: 1px solid #dad9d8;
+  border-bottom: 1px solid #dad9d8;
+  color: #5f5753;
+}
+/*===========// Mobile Menu //=========*/
+.mobile_nav_menu{
+  display: none;
+}
+.ipads_menu{
+  display: none;
+}
+/*===========// Main Manu //=========*/
+.nav_menu_wrapper{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid #efefef;
+}
+.menu_item_wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+/*---------------------
+    Active Show-Hide
+----------------------*/
+.sub_menu_wrapper {
+  z-index: 100;
+  display:none;
+  opacity:0;
+  background-color: #eee;
+  position: absolute;
+  top: 56px;
+  right: 0;
+}
+.menu_btn_active {
+  opacity: 1;
+  display:block;
+}
+/*---------End-------*/
+
+.mr-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.mr-animate-left{animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.mr-animate-right{animation:animateright 0.4s}@keyframes animateright{from{right:-200px;opacity:0} to{right:0;opacity:1}}
+.mr-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+
+
+/*---------------------
+        Menu style
+----------------------*/
+.menu_item{
+  margin-bottom: -4px;
+}
+.menu_item button{
+  border: none;
+  outline: none;
+  background: none;
+  padding: 16px 8px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 4px solid #efefef;
+  transition: .4s;
+}
+.menu_item button:hover{
+  border: none;
+  background: none;
+  padding: 16px 8px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 4px solid #ae0a46;
+}
+.menu_item button:focus{
+  
+}
+
+
+
+/* Sub menu Button Design */
+.sub_menu {
+    display: flex;
+    padding: 10px 5px;
+    background-color: #fff;
+    border-top: 4px solid #ae0a46;
+  }
+  .sub_menu h3{
+    color: #222;
+    font-size: 18px;
+    font-family: arial;
+  }
+  .sub_menu p{
+    color: #5f5753;
+    background: none;
+    font-size: 16px;
+    font-family: arial;
+  }
+  .sub_menu a{
+    display: block;
+    color: #5f5753;
+    background: none;
+    font-size: 16px;
+    font-family: arial;
+  }
+  .sub_menu a:hover{
+    color: #6f062d;
+    border-bottom: none;
+    background: none;
+    text-decoration: none;
+  }
+  
+
+
+  
+
+/*======================================*/
+  /*=================================
+                MOBILE MENU
+    ===============================*/
+/*=======================================*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+
+
+}
+/* iPads (portrait and landscape)  */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+}
+
+
+/*max-width:500px == anything < 500px*/
+/*min-width:500px == anything > 500px*/
+
+
+@media screen and (min-width:1200px) {}
+/*User iPads (landscape)*/
+@media screen and (max-width:992px) {
+
+/* }
+  .ipads_menu{
+    display: inline;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+
+
+@media screen and (max-width:786px) {   */
+
+/*======================
+   Header Menu Wrapper 
+========================*/
+.header_bottom_wrapper{
+  background-color: rgb(238, 238, 238);
+}
+.nav_menu_wrapper{
+  position: relative;
+  display: block;
+}
+
+/*=======// Header logo //=======*/
+.header_logo img{
+  width:6'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  0px;
+  vertical-align: middle;
+  margin: 5px;
+  margin-left: 15px;
+  display: table-cell;
+  position: relative;
+}
+.mobile_nav_menu{
+  display: none;
+}
+
+/*========// Mobile View //========*/
+.mobile_view_wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.mobile_nav_menu{
+  display: block;
+  margin: 8px;
+}
+.menu_icon{
+  display: block;
+}
+.menu_icon a{
+  color: #5f5753;
+  font-size: 16px;
+  margin-left: 15px;
+}
+.ipads_menu{
+  display: none;
+}
+
+/*========// Main Manu //========*/
+
+.menu_item_wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+/*---------------------
+    Active Show-Hide
+----------------------*/
+.sub_menu_wrapper {
+  z-index: 100;
+  display:none;
+  opacity:0;
+  background-color: #eee;
+  position: absolute;
+  top: 56px;
+  right: 0;
+}
+.menu_btn_active {
+  opacity: 1;
+  display:block;
+}
+/*---------End-------*/
+
+/*=======/// Script Show Hide///=======*/
+
+.show_flex{
+  display: flex;
+}
+.sub_sub_menu_hide{
+  display: none;
+}
+.sub_sub_menu_show{
+  display: inline-block;
+}
+.main_menu{
+  display: none;
+}
+/*=========/// Script Show Hide///========*/
+
+
+/*==========// Header Search //=======*/
+.search_menu{
+  display: none;
+  background-color: #ae0a46;
+}
+.header_search{
+  display: inline;
+}
+
+.header_search{
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+.header_search input[type=search]{
+  margin: 10px 15px 0px 0px;
+  padding: 5px 10px;
+  background: #f7f6f5;
+  border: none;
+  border-top: 1px solid #dad9d8;
+  border-left: 1px solid #dad9d8;
+  border-bottom: 1px solid #dad9d8;
+  font-size: 14px;
+  width: 220px;
+}
+.header_search input:focus[type=search]{
+  outline: none;
+  background: #f7f6f5;
+  width: 350%;
+  position: absolute;
+  top: 0;
+  right: 36px;
+  padding: 6.5px;
+}
+.header_search input::placeholder {
+  color: #5f5753;
+}
+.header_search button{
+  margin: 10px 15px 0px -15px;
+  padding: 5px 10px;
+  background: #f7f6f5;
+  outline: none;
+  border: none;
+  border-top: 1px solid #dad9d8;
+  border-right: 1px solid #dad9d8;
+  border-bottom: 1px solid #dad9d8;
+  color: #5f5753;
+}
+ 
+
+}
+
+@media screen and (min-width:320px) {}

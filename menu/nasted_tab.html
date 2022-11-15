@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Tabbis</title>
+
+        <!-------cdn link------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+        <!-------CSS File------->
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="css/tab.css">
+    
+    <style>
+      
+    </style>
+  </head>
+<body>
+  <section class="container">
+    <div  class="row tabbar_wrapper">
+      <div class="col-4 data_tabs_button" data-tabs>
+        <button class="active">Software</button>
+        <button>Hardware</button>
+        <button>Solution</button>
+        <button>Service</button>
+        <button>Industry</button>
+      </div>
+      <div class="col-8 data_tabs_content" data-panes>
+        <!--==// Tab Item //==-->
+        <div class="active">
+            <!--Sub Button-->
+            <div class="sub_tabs_button" data-tabs>
+              <button class="active">QA Wolf</button>
+              <button>Freshservice</button>
+              <button>JIRA</button>
+            </div>
+            
+            <div class="sub_tabs_content" data-panes>
+              <!--Sub Item-->
+              <div class="active">Best for outsourcing test covereage to speed up software releases</div>
+              <!--Sub Item-->
+              <div>ITSM tool with release management features</div>
+              <!--Sub Item-->
+              <div>Plan and manage software releases</div>
+            </div>
+        </div>
+        <!--==// Tab Item //==-->
+        <div>
+          <!--Sub Button-->
+          <div class="sub_tabs_button" data-tabs>
+            <button class="active">UPS battery</button>
+            <button>Cable</button>
+          </div>
+          
+          <div class="sub_tabs_content" data-panes>
+            <!--Sub Item-->
+            <div class="active">APC Replacement Battery Cartridge #2 - UPS battery - lead acid</div>
+            <!--Sub Item-->
+            <div class="active">The power cable mainly consists of three main components, namely, conductor, dielectric, and sheath. The conductor in the cable provides the conducting path for the current. The insulation or dielectric withstands the service voltage and isolates the conductor with other objects.</div>
+          </div>
+        </div>
+        <!--==// Tab Item //==-->
+        <div>
+          <!--Sub Button-->
+          <div class="sub_tabs_button" data-tabs>
+            <button class="active">UPS battery</button>
+            <button>Cable</button>
+          </div>
+          
+          <div class="sub_tabs_content" data-panes>
+            <!--Sub Item-->
+            <div class="active">APC Replacement Battery Cartridge #2 - UPS battery - lead acid</div>
+            <!--Sub Item-->
+            <div class="active">The power cable mainly consists of three main components, namely, conductor, dielectric, and sheath. The conductor in the cable provides the conducting path for the current. The insulation or dielectric withstands the service voltage and isolates the conductor with other objects.</div>
+          </div>
+        </div>
+        <!--==// Tab Item //==-->
+        <div>
+          <!--Sub Button-->
+          <div class="sub_tabs_button" data-tabs>
+            <button class="active">UPS battery</button>
+            <button>Cable</button>
+          </div>
+          
+          <div class="sub_tabs_content" data-panes>
+            <!--Sub Item-->
+            <div class="active">APC Replacement Battery Cartridge #2 - UPS battery - lead acid</div>
+            <!--Sub Item-->
+            <div class="active">The power cable mainly consists of three main components, namely, conductor, dielectric, and sheath. The conductor in the cable provides the conducting path for the current. The insulation or dielectric withstands the service voltage and isolates the conductor with other objects.</div>
+          </div>
+        </div>
+        <!--==// Tab Item //==-->
+        <div>
+          <!--Sub Button-->
+          <div class="sub_tabs_button" data-tabs>
+            <button class="active">UPS battery</button>
+            <button class="">Light</button>
+            <button class="">Speker</button>
+            <button class="">Mouse</button>
+            <button class="">View All</button>
+          </div>
+          
+          <div class="sub_tabs_content" data-panes>
+            <!--Sub Item-->
+            <div class="active">APC Replacement Battery Cartridge #2 - UPS battery - lead acid</div>
+            <!--Sub Item-->
+            <div class="active">The power cable mainly consists of three main components, namely, conductor, dielectric, and sheath. The conductor in the cable provides the conducting path for the current. The insulation or dielectric withstands the service voltage and isolates the conductor with other objects.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+    
+    
+
+    
+
+    <script src="js/nasted.tab.js"></script>
+    <script>
+      var tabs = tabbis.init({
+        tabGroup: "[data-tabs]",
+        paneGroup: "[data-panes]",
+        tabActive: "active",
+        paneActive: "active",
+        callback: function(tab, pane) {
+          console.log(tab);
+          console.log(pane);
+        }
+      });
+    </script>
+  </body>
+</html>

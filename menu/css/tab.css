@@ -1,0 +1,80 @@
+[data-tabs] {
+    background: none;
+}
+[data-tabs] .active {
+    background: #ae0a46;
+    color: #fff;
+}
+[data-panes]{
+    border-top: none;
+}
+[data-panes] > * {
+    display: none;
+    border-top: none;
+}
+[data-panes] > .active {
+    display: block;
+}
+/*===========================*/
+.tabbar_wrapper{
+    border: 2px solid #ae0a46;
+    margin-top: 40px;
+}
+.data_tabs_button{
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.data_tabs_button button{
+    display: block;
+    width: 100%;
+    text-align: start;
+    padding: 10px 0px 10px 20px;
+    border: none;
+    outline: none;
+    background: #eee;
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid silver;
+    transition: 0.3s;
+}
+.data_tabs_button button:hover{
+    background: #ae0a46;
+    color: #fff;
+}
+/* 
+background: #ae0a46; */
+
+.data_tabs_content{
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+}
+
+/*-----Sub Tab Style----*/
+.sub_tabs_button{
+    border-bottom: 1px solid silver;
+    padding-bottom: 20px;
+    margin-top: -1px;
+}
+.sub_tabs_button button{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    min-width: 100px;
+    text-align: center;
+    background-color: #ff8a65;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+.sub_tabs_button button:hover {
+    background: #da7556;
+}
+.sub_tabs_content{
+    margin-top: 15px;
+    padding: 0px;
+}
